@@ -6,7 +6,7 @@
     font-size:20px;
 
 }
-.side_nav a{
+/* .side_nav a{
     text-decoration: none;
     color: black;
 
@@ -18,7 +18,7 @@
 }
 .topnav a:hover {
     font-weight:bold;
-  }
+  } */
 
 .main_text{
     float:right;
@@ -64,4 +64,11 @@
     background: black;
     color: white;
     font-size:48px;   
+}
+
+.profile_pic{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:250px;
 }
