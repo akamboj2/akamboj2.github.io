@@ -5,13 +5,12 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <div class="container">
-    <div id="nav-placeholder">
-        <!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
-        <script>
+    <script>
         $.get("navigation.html", function(data){
             $("#nav-placeholder").replaceWith(data);
         });
-        </script>
+    </script>
+    <div id="nav-placeholder">
     </div>
     <div class = "main_text">
     <body >
