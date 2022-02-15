@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
-<!--     <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
-    
-     <Head>   
+    <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+    </head>
+     <!-- <Head>   
     <script type="text/javascript" 
     src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
     </script> 
     <Title>    
     Including the jQuery by CDN  
     </Title> 
-  </Head> 
-    <link rel="stylesheet" href="styles.css">
+  </Head>  -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <!-- for social media  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="container">
     <div id="nav-placeholder">
-        <!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
         <script>
         $.get("navigation.html", function(data){
             $("#nav-placeholder").replaceWith(data);

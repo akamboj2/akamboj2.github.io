@@ -1,9 +1,12 @@
 <!DOCTYPE html> 
 <html>
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+    </head>
+    
     <div class="container">
     <div id="nav-placeholder">
-        <script src="//code.jquery.com/jquery.min.js"></script>
         <script>
         $.get("navigation.html", function(data){
             $("#nav-placeholder").replaceWith(data);
