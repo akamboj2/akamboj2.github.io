@@ -16,9 +16,13 @@
     color:blue;
 
 }
-.topnav a:hover {
+*/
+/* .topnav a:hover {
     font-weight:bold;
-  } */
+    
+  } 
+  .hide { display:none !important; } */
+
 
 .main_text{
     border:10px;

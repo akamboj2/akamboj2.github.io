@@ -23,13 +23,26 @@
     <!-- for social media  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="container">
-    <div id="nav-placeholder">
-        <script>
-        $.get("navigation.html", function(data){
-            $("#nav-placeholder").replaceWith(data);
-        });
-        </script>
-    </div>
+    <!-- FOR SOME RESON THIS ISN"T WORKING. IDK why
+         -->
+         <script>
+            $.get("navigation.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+            </script>
+         <div id="nav-placeholder">
+            
+        </div>
+    <div id="nav-placeholder" class="side_nav">
+        <h3>Abhi Kamboj</h3>
+        <nav>
+            
+              <a href="./index.html">Home</a><br>
+              <a href="./projects.html">Projects</a><br>
+              <a href="./academics.html">Academics</a><br>
+              <a href="./professional.html">Professional</a><br>
+      
+        </nav>
     <div class = "main_text">
         
         <figure>
