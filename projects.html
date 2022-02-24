@@ -16,7 +16,30 @@
     <div class="main_text">
         <h1 id="projects"> Projects </h1>
         <h2>NVIDIA Scene Text Recognition</h2>
-            <a href="https://github.com/NVIDIA-AI-IOT/scene-text-recognition">Scene Text Recognition Github</a>
+            <b>Description:</b>
+            <p>
+                I worked in NVIDIA’s Autonomous machines unit, under the Jetson Dev Tech team. 
+                The Jetson product line is NVIDIA’s embedded AI GPU for edge IoT and mobile robotics applications. 
+                The goal of my project was to develop an open-source Scene Text Recognition (STR) system for NVIDIA partners to use, as well as for NVIDIA’s own internal projects to use. 
+                I initially researched and benchmarked various state of the art STR models (CSTR, STRN, EasyOCR) and chose the 2 stage EasyOCR framework to further develop, as it performed the best. 
+                The first stage is text detection, where bounding boxes are drawn around the text, and the second stage is recognition, where the images are cropped to those bounding boxes and classification is performed on the letters/words. 
+                
+                I used NVIDIA’s TensorRT framework to speed up the model’s inference on the V100 GPU and the Jetson AGX Xavier (JAX). TensorRT approximately doubled the model’s inference throughput. The V100 GPU is one of NVIDIA’s top industry grade GPUs thus performed better, however, the JAX performed significantly well for its small form factor, so much so that it was able to perform STR in real-time with a video camera at approximately 30 fps. This fast inference real-time video application was packaged in a docker container for easy deployment.
+
+            Below are some diagrams of the project.
+            The open-source code is on NVIDIA-AI-IOT GitHub:<a href="https://github.com/NVIDIA-AI-IOT/scene-text-recognition">Scene Text Recognition Github</a>
+            </p>
+            <img src="files/nvidia/STR_prelim_profiling.PNG" alt="NVIDIA project" style="width:100%">
+            <img src="files/nvidia/STR_2stage.PNG" alt="2 stage STR" style="width: 100%">
+            <img src="files/nvidia/STR_end_vs_2stage.PNG" alt="NVIDIA project" style="width:100%">
+            <img src="files/nvidia/STR_origEasyOCR.PNG" alt="NVIDIA project" style="width:100%">
+            <img src="files/nvidia/STR_modified_EasyOCR.PNG" alt="NVIDIA project" style="width:100%">
+            <img src="files/nvidia/STR_benchmarking.PNG" alt="NVIDIA project" style="width:100%">
+            <img src="files/nvidia/STR_example1.PNG" alt="NVIDIA project" style="width:100%">
+            <img src="files/nvidia/STR_exampl2_airport.PNG" alt="NVIDIA project" style="width:100%">
+            <img src="files/nvidia/STR_example3_UPS.PNG" alt="NVIDIA project" style="width:100%">
+
+
         <h2>Human-Centered Autonomy Lab</h2>
         <p>
             This is a reserach project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.
@@ -25,7 +48,6 @@
                 <img src="Abhi Research Portfolio/2021 - Senior Year/small_grid_errors.png" alt="Semantic segmentation of a building" style="width:30%">
                 <img src="Abhi Research Portfolio/2021 - Senior Year/terrasentia.jpg" alt="Semantic segmentation of a building" style="width:30%">
                 <figcaption>Example of the simulation running, user interface, and real robots they represent.</figcaption>
-
             </figure>
 
             <b>Abstract:</b>
