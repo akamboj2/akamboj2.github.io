@@ -4,7 +4,6 @@
         <link rel="stylesheet" href="styles.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
-    
     <div class="container">
     <script>
         $.get("navigation.html", function(data){
@@ -15,7 +14,35 @@
     </div>
     <div class="main_text">
         <h1 id="projects"> Projects </h1>
-        <h2>NVIDIA Scene Text Recognition</h2>
+        <button class="collapsible">Human-Centered Autonomy Lab</button>
+        <div class="collapse_content"> 
+            <p>
+                This is a reserach project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.
+                <figure>
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/auto_farm30x30.gif" alt="Semantic segmentation of a building" style="width:20%">
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/small_grid_errors.png" alt="Semantic segmentation of a building" style="width:30%">
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/terrasentia.jpg" alt="Semantic segmentation of a building" style="width:30%">
+                    <figcaption>Example of the simulation running, user interface, and real robots they represent.</figcaption>
+                </figure>
+
+                <b>Abstract:</b>
+                <br><br>
+                Agriculture is facing a labor crisis, leading to increased interest in fleets of small, under-canopy robots (agbots) that can perform precise, targeted actions (e.g., crop scouting, weeding, fertilization), while being supervised by human operators remotely. 
+                However, farmers are not necessarily experts in robotics technology and will not adopt technologies that add to their workload or do not provide an immediate payoff.
+                In this work, we explore methods for communication between a remote human operator and multiple agbots and examine the impact of audio communication on the operator's preferences and productivity.
+                We develop a simulation platform where agbots are deployed across a field, randomly encounter failures, and call for help from the operator. 
+                As the agbots report errors, various audio communication mechanisms are tested to convey which robot failed and what type of failure occurs. 
+                The human is tasked with verbally diagnosing the failure while completing a secondary task. 
+                A user study was conducted to test three audio communication methods: earcons, single-phrase commands, and full sentence communication. 
+                Each user completed a survey to determine each method's overall effectiveness and preferences. 
+                Our results suggest that the system using short phrases is the most positively perceived by participants and may allow for the human to complete the secondary task more efficiently. 
+                <br><br>
+                Full paper accepted @ IEEE ROMAN 2022: <a href="Abhi Research Portfolio/2022 - Grad School/hcal_paper.pdf">Examining Audio Communication Mechanisms for Supervising Fleets of Agricultural Robots</a>
+                <br>Co-authors: Tianchen Ji, Dr. Katie Driggs-Campbell
+            </p>
+        </div>
+        <button class="collapsible">NVIDIA Scene Text Recognition</button>
+        <div class="collapse_content"> 
             <b>Description:</b>
             <p>
                 I worked in NVIDIA’s Autonomous machines unit, under the Jetson Dev Tech team. 
@@ -38,34 +65,9 @@
             <img src="files/nvidia/STR_example1.PNG" alt="NVIDIA project" style="width:100%">
             <img src="files/nvidia/STR_exampl2_airport.PNG" alt="NVIDIA project" style="width:100%">
             <img src="files/nvidia/STR_example3_UPS.PNG" alt="NVIDIA project" style="width:100%">
-
-
-        <h2>Human-Centered Autonomy Lab</h2>
-        <p>
-            This is a reserach project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.
-            <figure>
-                <img src="Abhi Research Portfolio/2021 - Senior Year/auto_farm30x30.gif" alt="Semantic segmentation of a building" style="width:20%">
-                <img src="Abhi Research Portfolio/2021 - Senior Year/small_grid_errors.png" alt="Semantic segmentation of a building" style="width:30%">
-                <img src="Abhi Research Portfolio/2021 - Senior Year/terrasentia.jpg" alt="Semantic segmentation of a building" style="width:30%">
-                <figcaption>Example of the simulation running, user interface, and real robots they represent.</figcaption>
-            </figure>
-
-            <b>Abstract:</b>
-            <br><br>
-            Agriculture is facing a labor crisis, leading to increased interest in fleets of small, under-canopy robots (agbots) that can perform precise, targeted actions (e.g., crop scouting, weeding, fertilization), while being supervised by human operators remotely. 
-            However, farmers are not necessarily experts in robotics technology and will not adopt technologies that add to their workload or do not provide an immediate payoff.
-            In this work, we explore methods for communication between a remote human operator and multiple agbots and examine the impact of audio communication on the operator's preferences and productivity.
-            We develop a simulation platform where agbots are deployed across a field, randomly encounter failures, and call for help from the operator. 
-            As the agbots report errors, various audio communication mechanisms are tested to convey which robot failed and what type of failure occurs. 
-            The human is tasked with verbally diagnosing the failure while completing a secondary task. 
-            A user study was conducted to test three audio communication methods: earcons, single-phrase commands, and full sentence communication. 
-            Each user completed a survey to determine each method's overall effectiveness and preferences. 
-            Our results suggest that the system using short phrases is the most positively perceived by participants and may allow for the human to complete the secondary task more efficiently. 
-            <br><br>
-            Full paper (pending submission for publication): <a href="Abhi Research Portfolio/2022 - Grad School/hcal_paper.pdf">Examining Audio Communication Mechanisms for Supervising Fleets of Agricultural Robots</a>
-            <br>Co-authors: Tianchen Ji, Dr. Katie Driggs-Campbell
-        </p>
-        <h2>Machine Learning Building Classification</h2>
+        </div>
+        <button class="collapsible">Machine Learning Building Classification</button>
+        <div class="collapse_content"> 
         This was a Machine Learning final project we completed, involving labeling and running a semantic segmentation task for building classification through resnet CNNs.
         <figure>
             <img src="Abhi Research Portfolio/2020 - Junior Year/sample_segmentation.png" alt="Semantic segmentation of a building" style="width:20%">
@@ -87,30 +89,51 @@
         <br><br>
         Full paper for course (not published) <a href="Abhi Research Portfolio/2020 - Junior Year/ML_Project_EPFL.pdf">Classification of Buildings using Google Street-View</a>
         <br>Co-authors: Francisco Lozano, Cary Chai
-        <h3>EagleCAD Solar MPPT Charge Controller Design</h3>
-        Designed a Maximum Power Point Tracker (MPPT) solar charge controller on for an autonomous ariel vehicle.
-        <!-- <embed src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi_s PURE 2018 MPPT Poster_revised.pdf" width="800px" height="2100px" /> -->
+        </div>
+        <button class="collapsible">EagleCAD Solar MPPT Charge Controller Design</button>
+        <div class="collapse_content"> 
+            Designed a Maximum Power Point Tracker (MPPT) solar charge controller on for an autonomous ariel vehicle.
+            <!-- <embed src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi_s PURE 2018 MPPT Poster_revised.pdf" width="800px" height="2100px" /> -->
 
-        <figure>
-            <img src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi's PURE 2018 MPPT Poster_revised.png" alt="Solar MPPT Characge Controller Poster" style="width:100%">
-            <figcaption>Reserach Poster.</figcaption>
-        </figure>
-        <h2>NSF REU Robotics and AI</h2>
-        <a href="https://sites.google.com/umn.edu/rsn/projects/reu-project-abhi-kamboj">Project Website</a>
-        <figure>
-            <h4>VREP Obstacle Avoidance</h4>
-            <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/navigation.png" alt="" style="width:50%">
-            <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/obj_avoid.png" alt="" style="width:50%">
-            <h4> Using iRobot with Lidar</h4>
-            <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/irobot.png" alt="" style="width:20%">
-            <h4> Using gmapping in hallways</h4>
-            <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/ros-gmapping.png" alt="" style="width:40%">
-            <h4> A* Path Planning</h4>
-            <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/path_plan.png" alt="" style="width:20%">
+            <figure>
+                <img src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi's PURE 2018 MPPT Poster_revised.png" alt="Solar MPPT Characge Controller Poster" style="width:100%">
+                <figcaption>Reserach Poster.</figcaption>
+            </figure>
+            <button class="collapsible">NSF REU Robotics and AI</button>
+            <a href="https://sites.google.com/umn.edu/rsn/projects/reu-project-abhi-kamboj">Project Website</a>
+            <figure>
+                <h4>VREP Obstacle Avoidance</h4>
+                <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/navigation.png" alt="" style="width:50%">
+                <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/obj_avoid.png" alt="" style="width:50%">
+                <h4> Using iRobot with Lidar</h4>
+                <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/irobot.png" alt="" style="width:20%">
+                <h4> Using gmapping in hallways</h4>
+                <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/ros-gmapping.png" alt="" style="width:40%">
+                <h4> A* Path Planning</h4>
+                <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/path_plan.png" alt="" style="width:20%">
 
-            <figcaption>Snippets of project, see website for full details</figcaption>
-        </figure>
-        <a href="https://sites.google.com/umn.edu/rsn/projects/reu-project-abhi-kamboj">Project Website</a>
+                <figcaption>Snippets of project, see website for full details</figcaption>
+            </figure>
+            <a href="https://sites.google.com/umn.edu/rsn/projects/reu-project-abhi-kamboj">Project Website</a>
+        </div>
     </div>
     </div>
+
+    <script>
+        /*for collapsible*/
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 </html>
