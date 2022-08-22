@@ -14,6 +14,28 @@
     </div>
     <div class="main_text">
         <h1 id="projects"> Projects </h1>
+        <button class="collapsible">Netradyne Multi Object Tracking</button>
+        <div class="collapse_content"> 
+            <p>
+                <b>Description:</b> 
+                The goal of this internship project was to create a novel multi object tracking architecture using transformers. 
+                This is a reserach project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.
+                I investigated existing Multi Object trakcing methods such as Global Tracking Transformers (GTR), Trackformer and MOTR and sought to improve them.
+                All the existing methods do not utilize a transformers capability to deal with long range dependencies.
+                GTR feeds in detections to a transformer to perform tracking over a window of frames, however, they lose contextual information but only feeding in detections, and they rely heavily on an accurate detector.
+                On the other hand, Trackformer and MOTR autogressively feed in pairs of frames, not just detections, to detect and track objects in the next frame, however, they only work with a window of 2 frames at once.
+                During this internship I helped develop an object tracking architecture that fuses multiple frames of features into the transformer and outputs multiple frames of object detections and tracks as output.
+                <br>
+                Work on this project is ongoing and experiments are being conducted. We refer to our model as Trackformer++ as it builds off of Trackformer. A visual comparison is shown below.
+                <figure>
+                    <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%">
+                    <img src="files/netradyne/Trackformer.png" alt="Trackformer Architecture" style="width:30%">
+                    <img src="files/netradyne/Trackformer++.png" alt="Trackformer++ (Our) Architecture" style="width:30%">
+                    <figcaption>Transformer architectures for multi object tracking (ours is called Trackformer++)</figcaption>
+                </figure>
+                <br>Co-authors: Michael Laielli
+            </p>
+        </div>
         <button class="collapsible">Human-Centered Autonomy Lab</button>
         <div class="collapse_content"> 
             <p>
@@ -37,7 +59,7 @@
                 Each user completed a survey to determine each method's overall effectiveness and preferences. 
                 Our results suggest that the system using short phrases is the most positively perceived by participants and may allow for the human to complete the secondary task more efficiently. 
                 <br><br>
-                Full paper accepted @ IEEE ROMAN 2022: <a href="Abhi Research Portfolio/2022 - Grad School/hcal_paper.pdf">Examining Audio Communication Mechanisms for Supervising Fleets of Agricultural Robots</a>
+                <b>Full paper accepted @ IEEE ROMAN 2022: <a href="Abhi Research Portfolio/2022 - Grad School/ROMAN_2022_Audio_Interaction (1).pdf">Examining Audio Communication Mechanisms for Supervising Fleets of Agricultural Robots</a></b>
                 <br>Co-authors: Tianchen Ji, Dr. Katie Driggs-Campbell
             </p>
         </div>
