@@ -27,6 +27,9 @@ body {
     
   } 
 
+.body{
+  overflow: auto
+}
 
 .main_text{
     border:10px;
@@ -36,9 +39,8 @@ body {
     font-size:20px;
 }
 .container{
-    padding: 10;
-    margin: 0;
-    
+    padding: 10px;
+    margin: 0px;
 }
 
 
