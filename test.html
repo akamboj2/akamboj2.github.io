@@ -1,18 +1,152 @@
 <!DOCTYPE html>
-<!-- <html>
-    <script src="//code.jquery.com/jquery.min.js"></script>
-<script>
-$.get("navigation.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
-</script> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, sans-serif !important;
+            background-color: white;  /* Set background color to white */
+            color: black;  /* Set text color to black */
+        }
 
-<script type="text/javascript">
+        .collapsible {
+            background-color: white;  /* Set collapsible background to white */
+            color: black;  /* Set text color to black */
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: 1px solid #777;  /* Add a border to distinguish the button */
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+        }
 
-    $(document).ready(function(){
-     $("#msgid").html("This is Hello World by JQuery");
-    });
-    
+        .collapsible img.collapsible-image {
+            width: 100px;  /* Adjust size as needed */
+            height: auto;  /* Maintain aspect ratio */
+            margin-right: 20px;  /* Space between image and text */
+        }
+
+        .collapsible-content {
+            flex: 1;  /* Take up remaining space */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .project-authors, .project-description {
+            font-size: 14px;
+        }
+
+        .project-links {
+            margin-top: 10px;  /* Space between description and links */
+        }
+
+        .project-links a {
+            margin-right: 10px;  /* Space between each link */
+            color: blue;  /* Link color */
+            text-decoration: none;  /* Remove underline from links */
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;  /* Underline on hover */
+        }
+
+        .active, .collapsible:hover {
+            background-color: #f1f1f1;  /* Light grey background on hover and active */
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: black;  /* Set the plus/minus color to black */
+            font-weight: bold;
+            margin-left: auto;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .collapse_content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: white;  /* Set collapse content background to white */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+    </header>
+    <section>
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2021 - Senior Year/auto_farm30x30.gif" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">Human-Centered Autonomy Lab</div>
+                <div class="project-authors">Co-authors: Tianchen Ji, Dr. Katie Driggs-Campbell</div>
+                <div class="project-description">This is a research project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.</div>
+                <div class="project-links">
+                    <a href="link-to-paper">Paper</a>| 
+                    <a href="link-to-code">Code</a>| 
+                    <a href="link-to-website">Website</a>
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            <p>
+                This is a research project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.
+                <figure>
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/auto_farm30x30.gif" alt="Semantic segmentation of a building" style="width:20%">
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/small_grid_errors.png" alt="Semantic segmentation of a building" style="width:30%">
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/terrasentia.jpg" alt="Semantic segmentation of a building" style="width:30%">
+                    <figcaption>Example of the simulation running, user interface, and real robots they represent.</figcaption>
+                </figure>
+
+                <b>Abstract:</b>
+                <br><br>
+                Agriculture is facing a labor crisis, leading to increased interest in fleets of small, under-canopy robots (agbots) that can perform precise, targeted actions (e.g., crop scouting, weeding, fertilization), while being supervised by human operators remotely. 
+                However, farmers are not necessarily experts in robotics technology and will not adopt technologies that add to their workload or do not provide an immediate payoff.
+                In this work, we explore methods for communication between a remote human operator and multiple agbots and examine the impact of audio communication on the operator's preferences and productivity.
+                We develop a simulation platform where agbots are deployed across a field, randomly encounter failures, and call for help from the operator. 
+                As the agbots report errors, various audio communication mechanisms are tested to convey which robot failed and what type of failure occurs. 
+                The human is tasked with verbally diagnosing the failure while completing a secondary task. 
+                A user study was conducted to test three audio communication methods: earcons, single-phrase commands, and full sentence communication. 
+                Each user completed a survey to determine each method's overall effectiveness and preferences. 
+                Our results suggest that the system using short phrases is the most positively perceived by participants and may allow for the human to complete the secondary task more efficiently. 
+                <br><br>
+                <b>Full paper accepted @ IEEE ROMAN 2022: <a href="Abhi Research Portfolio/2022 - Grad School/ROMAN_2022_Audio_Interaction (1).pdf">Examining Audio Communication Mechanisms for Supervising Fleets of Agricultural Robots</a></b>
+                <br>Co-authors: Tianchen Ji, Dr. Katie Driggs-Campbell
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>Contact me at: <a href="mailto:example@example.com">example@example.com</a></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var coll = document.getElementsByClassName("collapsible");
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                });
+            }
+        });
     </script>
-    
+</body>
 </html>

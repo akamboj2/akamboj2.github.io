@@ -14,15 +14,32 @@
     </div>
     <div class="main_text">
         <h1 id="projects"> Projects </h1>
-        <button class="collapsible">Multi Sensor Multi Task Fusion</button>
+
+
+        <!-- Sensor Fusion Project -->
+        <!-- <button class="collapsible">Multi Sensor Multi Task Fusion</button>
         <div class="collapse_content"> 
             <p>
                 <b>Description:</b> 
                 This project aims to develop a model capable of human behavior and motion understanding a prediction.
-                Details are outlined in the following proposal: <a href="files/Abhi_Kamboj_Research_Plan_Submit.pdf">Classification of Buildings using Google Street-View</a>
+                Details are outlined in the following proposal: <a href="files/Abhi_Kamboj_Research_Plan_Submit.pdf">Mulit Sensor Multi Task Fusion</a>
             </p>
-        </div>
-        <button class="collapsible">Netradyne Multi Object Tracking</button>
+        </div> -->
+
+        <!-- Netradyne MOT Project -->
+        <button class="collapsible">
+            <img src="files/netradyne/Trackformer++.png" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">Netradyne Multi Object Tracking</div>
+                <div class="project-authors">Authors: Abhi Kamboj, Michael Laelli</div>
+                <div class="project-description">The goal of this internship project was to create a novel multi object tracking architecture using transformers.</div>
+                <div class="project-links">
+                    <!-- <a href="link-to-paper">Paper</a>| 
+                    <a href="link-to-code">Code</a>| 
+                    <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
         <div class="collapse_content"> 
             <p>
                 <b>Description:</b> 
@@ -34,20 +51,35 @@
                 On the other hand, Trackformer and MOTR autogressively feed in pairs of frames, not just detections, to detect and track objects in the next frame, however, they only work with a window of 2 frames at once.
                 During this internship I helped develop an object tracking architecture that fuses multiple frames of features into the transformer and outputs multiple frames of object detections and tracks as output.
                 <br>
-                Work on this project is ongoing and experiments are being conducted. We refer to our model as Trackformer++ as it builds off of Trackformer. A visual comparison is shown below.
+                Work on this project is ongoing and experiments are being conducted. We refer to our model as <b>Trackformer++</b> as it builds off of Trackformer. A visual comparison is shown below.
                 <figure>
                     <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%">
                     <img src="files/netradyne/Trackformer.png" alt="Trackformer Architecture" style="width:30%">
-                    <img src="files/netradyne/Trackformer++.png" alt="Trackformer++ (Our) Architecture" style="width:30%">
+                    <img src="files/netradyne/Trackformer++.png" alt="Trackformer++ (Our) Architecture" style="width:25%">
                     <figcaption>Transformer architectures for multi object tracking (ours is called Trackformer++)</figcaption>
                 </figure>
-                <br>Co-authors: Michael Laielli
             </p>
         </div>
-        <button class="collapsible">Human-Centered Autonomy Lab</button>
+
+
+        <!-- Agbot Project -->
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2021 - Senior Year/auto_farm30x30.gif" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">Examining Audio Communication Mechanisms for Supervising Fleets of Agricultural Robots</div>
+                <div class="project-authors">Authors: Abhi Kamboj, Tianchen Ji, Dr. Katie Driggs-Campbell</div>
+                <div class="project-description">This is a research project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.</div>
+                <div class="project-venue">Published in: 2022 31st IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)
+                </div>
+                <div class="project-links">
+                    <a href="link-to-paper">Paper</a>| 
+                    <a href="link-to-code">Code</a>| 
+                    <a href="link-to-website">Website</a>
+                </div>
+            </div>
+        </button>
         <div class="collapse_content"> 
             <p>
-                This is a reserach project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.
                 <figure>
                     <img src="Abhi Research Portfolio/2021 - Senior Year/auto_farm30x30.gif" alt="Semantic segmentation of a building" style="width:20%">
                     <img src="Abhi Research Portfolio/2021 - Senior Year/small_grid_errors.png" alt="Semantic segmentation of a building" style="width:30%">
@@ -71,36 +103,67 @@
                 <br>Co-authors: Tianchen Ji, Dr. Katie Driggs-Campbell
             </p>
         </div>
-        <button class="collapsible">NVIDIA Scene Text Recognition</button>
-            <div class="collapse_content"> 
-                <b>Description:</b>
-                <p>
-                    I worked in NVIDIA’s Autonomous machines unit, under the Jetson Dev Tech team. 
-                    The Jetson product line is NVIDIA’s embedded AI GPU for edge IoT and mobile robotics applications. 
-                    The goal of my project was to develop an open-source Scene Text Recognition (STR) system for NVIDIA partners to use, as well as for NVIDIA’s own internal projects to use. 
-                    I initially researched and benchmarked various state of the art STR models (CSTR, STRN, EasyOCR) and chose the 2 stage EasyOCR framework to further develop, as it performed the best. 
-                    The first stage is text detection, where bounding boxes are drawn around the text, and the second stage is recognition, where the images are cropped to those bounding boxes and classification is performed on the letters/words. 
-                    
-                    I used NVIDIA’s TensorRT framework to speed up the model’s inference on the V100 GPU and the Jetson AGX Xavier (JAX). TensorRT approximately doubled the model’s inference throughput. The V100 GPU is one of NVIDIA’s top industry grade GPUs thus performed better, however, the JAX performed significantly well for its small form factor, so much so that it was able to perform STR in real-time with a video camera at approximately 30 fps. This fast inference real-time video application was packaged in a docker container for easy deployment.
 
-                Below are some diagrams of the project.
-                The open-source code is on NVIDIA-AI-IOT GitHub:<a href="https://github.com/NVIDIA-AI-IOT/scene-text-recognition">Scene Text Recognition Github</a>
-                </p>
-                <!-- unnecessary and blurry          <img src="files/nvidia/STR_prelim_profiling.PNG" alt="NVIDIA project" style="width:100%"> -->
-                <img src="files/nvidia/STR_2stage.PNG" alt="2 stage STR" style="width: 100%">
-                <img src="files/nvidia/STR_end_vs_2stage.PNG" alt="NVIDIA project" style="width:100%">
-                <img src="files/nvidia/STR_origEasyOCR.PNG" alt="NVIDIA project" style="width:100%">
-                <img src="files/nvidia/STR_modified_EasyOCR.PNG" alt="NVIDIA project" style="width:100%">
-                <img src="files/nvidia/STR_benchmarking.PNG" alt="NVIDIA project" style="width:100%">
-                <img src="files/nvidia/STR_example1.PNG" alt="NVIDIA project" style="width:100%">
-                <img src="files/nvidia/STR_exampl2_airport.PNG" alt="NVIDIA project" style="width:100%">
-                <img src="files/nvidia/STR_example3_UPS.PNG" alt="NVIDIA project" style="width:100%">
+        <!-- NVIDIA STR PROJECT -->
+        <button class="collapsible">
+            <img src="files/nvidia/STR_exampl2_airport.PNG" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">NVIDIA: Benchmarking Scene Text Recognition on Jetson Devices</div>
+                <div class="project-authors">Authors: Abhi Kamboj</div>
+                <div class="project-description">Using TensorRT to develop scene text recogntion models on the Jetson AGX Xavier and benchmarking SOTA models. </div>
+                <div class="project-links">
+                    <!-- <a href="link-to-paper">Paper</a>|  -->
+                    <a href="https://github.com/NVIDIA-AI-IOT/scene-text-recognition">Code</a>
+                    <!-- <a href="link-to-website">Website</a> -->
+                </div>
             </div>
-        <button class="collapsible">Machine Learning Building Classification</button>
+        </button>
         <div class="collapse_content"> 
-            This was a final project for CS 433 Machine learning at EPFL in Switzerland. 
-            It was completed in collaboration with a civil engineering lab at EPFL to accurately classify buildings by their window to facade ratio using images pulled from Googl Street view.
+            <b>Description:</b>
+            <p>
+                I worked in NVIDIA’s Autonomous machines unit, under the Jetson Dev Tech team. 
+                The Jetson product line is NVIDIA’s embedded AI GPU for edge IoT and mobile robotics applications. 
+                The goal of my project was to develop an open-source Scene Text Recognition (STR) system for NVIDIA partners to use, as well as for NVIDIA’s own internal projects to use. 
+                I initially researched and benchmarked various state of the art STR models (CSTR, STRN, EasyOCR) and chose the 2 stage EasyOCR framework to further develop, as it performed the best. 
+                The first stage is text detection, where bounding boxes are drawn around the text, and the second stage is recognition, where the images are cropped to those bounding boxes and classification is performed on the letters/words. 
+                
+                I used NVIDIA’s TensorRT framework to speed up the model’s inference on the V100 GPU and the Jetson AGX Xavier (JAX). TensorRT approximately doubled the model’s inference throughput. The V100 GPU is one of NVIDIA’s top industry grade GPUs thus performed better, however, the JAX performed significantly well for its small form factor, so much so that it was able to perform STR in real-time with a video camera at approximately 30 fps. This fast inference real-time video application was packaged in a docker container for easy deployment.
+
+            Below are some diagrams of the project.
+            The open-source code is on NVIDIA-AI-IOT GitHub:<a href="https://github.com/NVIDIA-AI-IOT/scene-text-recognition">Scene Text Recognition Github</a>
+            </p>
+            <!-- unnecessary and blurry          <img src="files/nvidia/STR_prelim_profiling.PNG" alt="NVIDIA project" style="width:100%"> -->
+            <img src="files/nvidia/STR_2stage.PNG" alt="2 stage STR" style="width: 40%">
+            <img src="files/nvidia/STR_end_vs_2stage.PNG" alt="NVIDIA project" style="width:40%">
+            <img src="files/nvidia/STR_origEasyOCR.PNG" alt="NVIDIA project" style="width:40%">
+            <img src="files/nvidia/STR_modified_EasyOCR.PNG" alt="NVIDIA project" style="width:40%">
+            <img src="files/nvidia/STR_benchmarking.PNG" alt="NVIDIA project" style="width:40%">
+            <img src="files/nvidia/STR_example1.PNG" alt="NVIDIA project" style="width:40%">
+            <img src="files/nvidia/STR_exampl2_airport.PNG" alt="NVIDIA project" style="width:40%">
+            <img src="files/nvidia/STR_example3_UPS.PNG" alt="NVIDIA project" style="width:40%">
+        </div>
+
+
+
+        <!-- EPFL ML Building Classification -->
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2020 - Junior Year/sample_segmentation.png" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">ML Classification of Buildings using Google
+                    Street-View</div>
+                <div class="project-authors">Authors: Francisco Lozano, Abhi Kamboj, Cary Chai</div>
+                <div class="project-description">Using machine learning to calculate the window to facade ratio of a building for building style classificaiton. </div>
+                <div class="project-links">
+                    <a href="Abhi Research Portfolio/2020 - Junior Year/ML_Project_EPFL.pdf">Paper</a>| 
+                    <a href="https://github.com/akamboj2/MLBuildingClassification">Code</a>
+                    <!-- <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            It was completed in collaboration with a civil engineering lab at EPFL to accurately classify buildings by their window to facade ratio using images pulled from Googl Street view of Zurich
             The project involved labeling and running a semantic segmentation task for building classification through resnet CNNs.
+            This was a final project for CS 433 Machine learning at EPFL in Switzerland. 
             <figure>
                 <img src="Abhi Research Portfolio/2020 - Junior Year/sample_segmentation.png" alt="Semantic segmentation of a building" style="width:20%">
                 <figcaption>Semantic segmentation labeling windows, images and building facade for the building classification task, using a self made lableing tool.</figcaption>
@@ -122,20 +185,48 @@
             Full paper for course (not published) <a href="Abhi Research Portfolio/2020 - Junior Year/ML_Project_EPFL.pdf">Classification of Buildings using Google Street-View</a>
             <br>Co-authors: Francisco Lozano, Cary Chai
         </div>
-        <button class="collapsible">EagleCAD Solar MPPT Charge Controller Design</button>
-        <div class="collapse_content"> 
-            Designed a Maximum Power Point Tracker (MPPT) solar charge controller on for an autonomous ariel vehicle.
-            <!-- <embed src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi_s PURE 2018 MPPT Poster_revised.pdf" width="800px" height="2100px" /> -->
 
+
+
+        <!-- EagleCAD Solar MPPT Charge Controller Design-->
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2019 - Sophmore Year/circuit.png" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">EagleCAD Solar MPPT Charge Controller Design</div>
+                <div class="project-authors">Authors: Abhi Kamboj, Or Dantsker, Marco Caccamo</div>
+                <div class="project-description">Designed a Maximum Power Point Tracker (MPPT) solar charge controller on for an autonomous ariel vehicle.</div>
+                <div class="project-links">
+                    <!-- <a href="Abhi Research Portfolio/2020 - Junior Year/ML_Project_EPFL.pdf">Paper</a>| 
+                    <a href="https://github.com/akamboj2/MLBuildingClassification">Code</a> -->
+                    <!-- <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            
+            <!-- <embed src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi_s PURE 2018 MPPT Poster_revised.pdf" width="800px" height="2100px" /> -->
+            This research was conducted in the PURE program at the University of Illinois at Urbana-Champaign, and presented at the undergraduate research symposium. More information on the motivation of the project can be found <a href="Abhi Research Portfolio/2019 - Sophmore Year/MPPTs Background Research.pptx">Background Research</a>, <a href="Abhi Research Portfolio/2019 - Sophmore Year/Pure Midsemester--Abhi_s Research.pptx">Midsemester Presentation</a>.
             <figure>
                 <img src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi's PURE 2018 MPPT Poster_revised.png" alt="Solar MPPT Characge Controller Poster" style="width:100%">
-                <figcaption>Reserach Poster.</figcaption>
+                <figcaption>Reserach poster presented at the UIUC PURE undergraduate reserach symposium in Fall 2018.</figcaption>
             </figure>
         </div>
 
-        <button class="collapsible">NSF REU Robotics and AI</button>
+        <!-- NSF REU Project -->
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/quad_copt.gif" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">NSF REU Robotics and AI</div>
+                <div class="project-authors">Authors: Abhi Kamboj, Volkan Isler</div>
+                <div class="project-description"> Simulated and tested atonoumous robot navigation </div>
+                <div class="project-links">
+                    <a href="https://docs.google.com/document/d/1SEEsvkGU-z6koim2bKHBSuxD_w_aHCOO0D9ARiUYE9c/edit">Report</a>| 
+                    <a href="https://github.com/akamboj2/AutonomousNav-RL_Research2018">Code</a> |
+                    <a href="https://sites.google.com/umn.edu/rsn/projects/reu-project-abhi-kamboj">Website</a>
+                </div>
+            </div>
+        </button>
         <div class="collapse_content">
-            <a href="https://sites.google.com/umn.edu/rsn/projects/reu-project-abhi-kamboj">Project Website</a>
             <figure>
                 <h4>VREP Obstacle Avoidance</h4>
                 <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/navigation.png" alt="" style="width:50%">
@@ -149,10 +240,11 @@
 
                 <figcaption>Snippets of project, see website for full details</figcaption>
             </figure>
-            <a href="https://sites.google.com/umn.edu/rsn/projects/reu-project-abhi-kamboj">Project Website</a>
         </div>
+       
     </div>
     </div>
+    
 
     <script>
         /*for collapsible*/
