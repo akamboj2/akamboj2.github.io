@@ -164,14 +164,39 @@ figcaption {
     background-color: #f1f1f1;
 }
 
-.collapsible:after {
+/* Uncomment below for the plus minus symbols */
+/* .collapsible:after {
     content: '\002B';
     color: black;
     font-weight: bold;
     float: right;
     margin-left: 5px;
-}
-
+} 
 .active:after {
     content: "\2212";
+    float: right;
+} */
+
+/* Project Related CSS */
+.project-title {
+    /* Your styles for the project title here */
+    font-size: 20px;
+    font-weight: bold;
+}
+.project-description {
+    /* Your styles for the project description here */
+    font-size: 15px;
+}
+.project-authors{
+    /* Your styles for the project authors here */
+    font-size: 15px;
+}
+.project-description {
+    /* Your styles for the project description here */
+    font-size: 15px;
+}
+.project-venue {
+    /* Your styles for the project venue here */
+    font-size: 15px;
+    font-style: italic;
 }
