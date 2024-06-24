@@ -200,3 +200,28 @@ figcaption {
     font-size: 15px;
     font-style: italic;
 }
+
+.figure-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.figure-container figure {
+    margin: 0;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.figure-container img {
+    width: 100%;
+    display: block;
+    object-fit: contain; /* Ensures consistent image display */
+
+}
+.figure-container figcaption {
+    text-align: center;
+    margin-top: 10px;
+    min-height: 50px; /* Ensures consistent caption height */
+
+}

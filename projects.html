@@ -28,38 +28,40 @@
 
         <!--  GOOD TEMPLATE -->
         <!-- Tag Project -->
-        <button class="collapsible">
+        <!-- <button class="collapsible">
             <img src="files/todo-qm.jpg" alt="Project Image" class="collapsible-image">
             <div class="collapsible-content">
                 <div class="project-title">TITLE</div>
                 <div class="project-authors">Abhi Kamboj</div>
-                <div class="project-venue">Arxiv 2022</div>
+                <div class="project-venue">Arxiv 2024</div>
                 <div class="project-links">
-                    <!-- <a href="link-to-paper">Paper</a>| 
-                    <a href="link-to-code">Code</a>| 
-                    <a href="link-to-website">Website</a> -->
+                    <a href="link-to-paper">Paper</a> | 
+                    <a href="link-to-code">Code</a> | 
+                    <a href="link-to-website">Website</a>
                 </div>
             </div>
         </button>
         <div class="collapse_content"> 
             <p>
-                <b>Description:</b> 
+                <b>Abstract:</b> <br> 
 
-                <!-- 
+                 
                 <figure>
-                    <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%">
-                    <figcaption>Transformer architectures for multi object tracking (ours is called Trackformer++)</figcaption>
-                </figure> -->
+                    <img src="files/todo-qm.jpg" alt="Global Tracking Transformer Architecture" style="width:30%">
+                    <figcaption>Sample caption goes here</figcaption>
+                </figure>
             </p>
-        </div>
+        </div> -->
     
+
+
         <!-- FACT fusion and transfer -->
         <button class="collapsible">
-            <img src="files/todo-qm.jpg" alt="Project Image" class="collapsible-image">
+            <img src="Abhi Research Portfolio/2024/FACT/T-Fact_img.png" alt="Project Image" class="collapsible-image">
             <div class="collapsible-content">
-                <div class="project-title">FACT </div>
+                <div class="project-title">FACT: Fusion and Cross-Modal Transfer for Zero-Shot Human Action Recognition </div>
                 <div class="project-authors">Abhi Kamboj, Duy Anh Nguyen, Minh Do</div>
-                <div class="project-venue">Arxiv 2022</div>
+                <div class="project-venue">Arxiv 2024, Under review at Conference</div>
                 <div class="project-links">
                     <!-- <a href="link-to-paper">Paper</a>| 
                     <a href="link-to-code">Code</a>| 
@@ -69,39 +71,67 @@
         </button>
         <div class="collapse_content"> 
             <p>
-                <b>Description:</b> 
-
-                <!-- 
+                <b>Abstract:</b> <br>
+                Despite living in a multi-sensory world, most AI models are limited to textual and visual interpretations of human motion and behavior. 
+                Inertial measurement units (IMUs) provide a salient signal to understand human motion; however, they are challenging to use due to their uninterpretability and scarcity of their data. 
+                We investigate a method to transfer knowledge between visual and inertial modalities using the structure of an informative joint representation space designed for human action recognition (HAR). 
+                We apply the resulting Fusion and Cross-modal Transfer (FACT) method to a novel setup, where the model does not have access to labeled IMU data during training and is able to perform HAR with only IMU data during testing.
+                Extensive experiments on a wide range of RGB-IMU datasets demonstrate that FACT significantly outperforms existing methods in zero-shot cross-modal transfer.
+                
                 <figure>
-                    <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%">
-                    <figcaption>Transformer architectures for multi object tracking (ours is called Trackformer++)</figcaption>
-                </figure> -->
+                    <img src="Abhi Research Portfolio/2024/FACT/FACT overview.png" alt="FACT architecture overview" style="width:40%">
+                    <img src="Abhi Research Portfolio/2024/FACT/T-Fact_img.png" alt="Time continuous extension of FACT (T-FACT) Diagram" style="width:40%">
+                    <figcaption>Left: An overview of the FACT method. Right: A diagram of the time continous FACT model T-FACT.</figcaption>
+                </figure>
             </p>
         </div>
+
+
 
         <!-- Cross-modal transfer lit review -->
         <button class="collapsible">
-            <img src="files/todo-qm.jpg" alt="Project Image" class="collapsible-image">
+            <img src="Abhi Research Portfolio/2024/cross-modal_review/HAR_metrics (1).png" alt="Project Image" class="collapsible-image">
             <div class="collapsible-content">
-                <div class="project-title">Cross-modal Transfer Survey</div>
+                <div class="project-title">A Survey of IMU Based Cross-Modal Transfer Learning in Human Activity Recognition
+                </div>
                 <div class="project-authors">Abhi Kamboj, Minh Do</div>
-                <div class="project-venue">Arxiv 2022</div>
+                <div class="project-venue">Arxiv 2024</div>
                 <div class="project-links">
-                    <!-- <a href="link-to-paper">Paper</a>| 
-                    <a href="link-to-code">Code</a>| 
+                    <a href="https://arxiv.org/abs/2403.15444">Paper</a> 
+                    <!--  <a href="link-to-code">Code</a>| 
                     <a href="link-to-website">Website</a> -->
                 </div>
             </div>
         </button>
         <div class="collapse_content"> 
             <p>
-                <b>Description:</b> 
+                <b>Abstract:</b> <br>
+                Despite living in a multi-sensory world, most AI models are limited to textual and visual understanding of human motion and behavior. 
+                Inertial measurement sensors provide a signal for AI to understand motion, however, in practice they has been understudied due to numerous difficulties and the uniterpretability of the data to humans. 
+                In fact, full situational awareness of human motion could best be understood through a combination of sensors.
+                In this survey we investigate how knowledge can be transferred and utilized amongst modalities for Human Activity/Action Recognition (HAR), i.e. cross-modality transfer learning.
+                We motivate the importance and potential of IMU data and its applicability in cross-modality learning as well as the importance of studying the HAR problem. 
+                We categorize HAR related tasks by time and abstractness and then compare various types of multimodal HAR datasets.
+                We also distinguish and expound on many related but inconsistently used terms in the literature, such as transfer learning, domain adaptation, representation learning, sensor fusion, and multimodal learning, and describe how cross-modal learning fits with all these concepts.
+                We then review the literature in IMU-based cross-modal transfer for HAR.
+                The two main approaches for cross-modal transfer are instance-based transfer, where instances of one modality are mapped to another (e.g. knowledge is transferred in the input space), or feature-based transfer, where the model relates the modalities in an intermediate latent space (e.g. knowledge is transferred in the feature space).
+                Finally, we discuss future research directions and applications in cross-modal HAR.
 
-                <!-- 
-                <figure>
-                    <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%">
-                    <figcaption>Transformer architectures for multi object tracking (ours is called Trackformer++)</figcaption>
-                </figure> -->
+                <div class="figure-container">
+                    <figure>
+                        <img src="Abhi Research Portfolio/2024/cross-modal_review/HAR_metrics (1).png" alt="Global Tracking Transformer Architecture">
+                        <figcaption> A graph-like visualization plotting HAR-related tasks to compare each task with the other based on temporal length involved in the task as well as the abstractness or coarseness of the task.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Abhi Research Portfolio/2024/cross-modal_review/venn_diagram.png" alt="Global Tracking Transformer Architecture">
+                        <figcaption>A comparison of sensor fusion and cross modal transfer.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Abhi Research Portfolio/2024/cross-modal_review/cross_modal_learning (1).png" alt="Global Tracking Transformer Architecture">
+                        <figcaption>A diagram showing two types of cross-modal transfer.</figcaption>
+                    </figure>
+
+                </div>
             </p>
         </div>
 
@@ -109,7 +139,7 @@
         
         <!-- Netradyne DriverGPT Project -->
         <button class="collapsible">
-            <img src="files/todo-qm.jpg" alt="Project Image" class="collapsible-image">
+            <img src="files/netradyne/netradyne_dash_cam.jpeg" alt="Project Image" class="collapsible-image">
             <div class="collapsible-content">
                 <div class="project-title">DriverGPT: Training a Generative Pretrained Transformer on Time-continous Physical Data</div>
                 <div class="project-authors">Abhi Kamboj, Ananya Gupta, Michael Laelli</div>
@@ -123,8 +153,8 @@
         </button>
         <div class="collapse_content"> 
             <p>
-                <b>Description:</b> 
-
+                <b>Description:</b> <br>
+                Generative Pretrained Transformers (GPT), e.g., ChatGPT, have recently changed the landscape of AI research with their size, scale, and performance. Researchers have discovered that with ample data and compute resources, this architecture performs very well and shows "emergent behavior," i.e., the ability to perform well or demonstrate knowledge on tasks it was not explicitly trained on. Netradyne is a fleet safety company that focuses on dash camera driving analytics, and they have vast amounts of driver data, providing a unique setting to leverage GPT-style models. The DriverGPT project aims to learn to predict future driver behaviors based on previous time steps. This could be used to predict short-term trajectories, such as potential collisions, or long-term behaviors, such as the overall trends of a driver's safety score and how it compares to other drivers. Nonetheless, extending GPT to driving data presented many challenges, such as how to tokenize continuous data or how to use GPT on time series data from devices with different frame rates and specifications. Many small-scale experiments were conducted to address these questions.
             <!-- 
                 <figure>
                     <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%">
@@ -135,22 +165,22 @@
 
         <!-- Robotics Pretraining Project -->
         <button class="collapsible">
-            <img src="Abhi Research Portfolio/2023/affordance-img-thumbnail.png" alt="Project Image" class="collapsible-image">
+            <img src="Abhi Research Portfolio/2023/robot_graping_figs/affordance-img-thumbnail.png" alt="Project Image" class="collapsible-image">
             <div class="collapsible-content">
-                <div class="project-title">A Brief Survey on Leveraging Large Scale Vision Models \\for Enhanced Robot Grasping</div>
+                <div class="project-title">A Brief Survey on Leveraging Large Scale Vision Models for Enhanced Robot Grasping</div>
                 <div class="project-authors">Abhi Kamboj, Katherine Driggs-Campbell</div>
                 <!-- <div class="project-description">The goal of this internship project was to create a novel multi object tracking architecture using transformers.</div> -->
                 <div class="project-venue">Arxiv 2023</div>
                 <div class="project-links">
-                    <!-- <a href="link-to-paper">Paper</a>| 
-                    <a href="link-to-code">Code</a>| 
+                    <a href="https://arxiv.org/abs/2406.11786">Paper</a>
+                    <!-- <a href="link-to-code">Code</a>| 
                     <a href="link-to-website">Website</a> -->
                 </div>
             </div>
         </button>
         <div class="collapse_content"> 
             <p>
-                <b>Abstract:</b> 
+                <b>Abstract:</b> <br>
                 Robotic grasping presents a difficult motor task in real-world scenarios, constituting a major hurdle to the deployment of capable robots across various industries. 
                 Notably, the scarcity of data makes grasping particularly challenging for learned models. 
                 Recent advancements in computer vision have witnessed a growth of successful unsupervised training mechanisms predicated on massive amounts of data sourced from the Internet, and now nearly all prominent models leverage pretrained backbone networks. 
@@ -158,7 +188,7 @@
                 This preliminary literature review sheds light on critical challenges and delineates prospective directions for future research in visual pretraining for robotic manipulation.
                 
                 <figure>
-                    <img src="Abhi Research Portfolio/2023/affordance-img.png" alt="Affordance prediction used for predicting robot grasps" style="width:30%">
+                    <img src="Abhi Research Portfolio/2023/robot_graping_figs/affordance-img.png" alt="Affordance prediction used for predicting robot grasps" style="width:30%">
                     <figcaption>This illustrates how visual pretraining can be used to teach affordance prediction models that guide a robot manipulator to the best picking position. This image is from <a /href="https://arxiv.org/pdf/2107.00646">"Learning to See before Learning to Act: Visual Pre-training for Manipulation
 ""                    </a></figcaption>
                 </figure>
@@ -166,30 +196,30 @@
         </div>
         
 
-        <!-- MOT Transformers Project -->
+        <!-- MOT Transformers Survey -->
         <button class="collapsible">
-            <img src="files/todo-qm.jpg" alt="Project Image" class="collapsible-image">
+            <img src="Abhi Research Portfolio/2023/transformers_review_figs/TransTrack.png" alt="Project Image" class="collapsible-image">
             <div class="collapsible-content">
-                <div class="project-title">DriverGPT: Training a Generative Pretrained Transformer on Time-continous Physical Data</div>
+                <div class="project-title">The Progression of Transformers from Language to Vision to MOT: A Literature Review on Multi-Object Tracking with Transformers</div>
                 <div class="project-authors">Abhi Kamboj</div>
-                <!-- <div class="project-description">The goal of this internship project was to create a novel multi object tracking architecture using transformers.</div> -->
                 <div class="project-venue">Arxiv 2023</div>
                 <div class="project-links">
-                    <!-- <a href="link-to-paper">Paper</a>| 
-                    <a href="link-to-code">Code</a>| 
+                    <a href="link-to-paper">TODO ADD Paper</a> 
+                    <!-- <a href="link-to-code">Code</a>| 
                     <a href="link-to-website">Website</a> -->
                 </div>
             </div>
         </button>
         <div class="collapse_content"> 
             <p>
-                <b>Description:</b> 
-
-                <!-- 
+                <b>Abstract:</b> <br>
+                The transformer neural network architecture allows for autoregressive sequence-to-sequence modeling through the use of attention layers. It was originally created with the application of machine translation but has revolutionized natural language processing. Recently, transformers have also been applied across a wide variety of pattern recognition tasks, particularly in computer vision. In this literature review, we describe major advances in computer vision utilizing transformers. We then focus specifically on Multi-Object Tracking (MOT) and discuss how transformers are increasingly becoming competitive in state-of-the-art MOT works, yet still lag behind traditional deep learning methods.
+                
                 <figure>
-                    <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%">
-                    <figcaption>Transformer architectures for multi object tracking (ours is called Trackformer++)</figcaption>
-                </figure> -->
+                    <img src="Abhi Research Portfolio/2023/transformers_review_figs/Transformer.png" alt="Global Tracking Transformer Architecture" style="width:30%">
+                    <img src="Abhi Research Portfolio/2023/transformers_review_figs/TransTrack.png" alt="Global Tracking Transformer Architecture" style="width:30%">
+                    <figcaption>The left shows the original <a href="https://arxiv.org/abs/1706.03762"> Transformer </a> architectecture. The right shows an extension to the architurecture of object tracking, implemented as <a href="https://arxiv.org/abs/2012.15460">TransTrack</a> </figcaption>
+                </figure> 
             </p>
         </div>
 
@@ -212,7 +242,7 @@
         </button>
         <div class="collapse_content"> 
             <p>
-                <b>Description:</b> 
+                <b>Description:</b> <br>
                 The goal of this internship project was to create a novel multi object tracking architecture using transformers. 
                 This is a reserach project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.
                 I investigated existing Multi Object trakcing methods such as Global Tracking Transformers (GTR), Trackformer and MOTR and sought to improve them.
@@ -378,7 +408,7 @@
         <div class="collapse_content"> 
             <!-- <embed src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi_s PURE 2018 MPPT Poster_revised.pdf" width="800px" height="2100px" /> -->
             <p>
-                <b>Description:</b>
+                <b>Description:</b> <br>
                 This research was conducted in the PURE program at the University of Illinois at Urbana-Champaign, and presented at the undergraduate research symposium. More information on the motivation of the project can be found <a href="Abhi Research Portfolio/2019 - Sophmore Year/MPPTs Background Research.pptx">Background Research</a>, <a href="Abhi Research Portfolio/2019 - Sophmore Year/Pure Midsemester--Abhi_s Research.pptx">Midsemester Presentation</a>.
                 <figure>
                     <img src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi's PURE 2018 MPPT Poster_revised.png" alt="Solar MPPT Characge Controller Poster" style="width:100%">
@@ -396,7 +426,7 @@
                 <!-- <div class="project-description"> Simulated and tested atonoumous robot navigation </div> -->
                 <div class="project-venue">NSF REU, University of Minnesota, MN, 2018</div>
                 <div class="project-links">
-                    <a href="https://docs.google.com/document/d/1SEEsvkGU-z6koim2bKHBSuxD_w_aHCOO0D9ARiUYE9c/edit">Report</a>| 
+                    <a href="https://docs.google.com/document/d/1SEEsvkGU-z6koim2bKHBSuxD_w_aHCOO0D9ARiUYE9c/edit">Report</a> | 
                     <a href="https://github.com/akamboj2/AutonomousNav-RL_Research2018">Code</a> |
                     <a href="https://sites.google.com/umn.edu/rsn/projects/reu-project-abhi-kamboj">Website</a>
                 </div>
