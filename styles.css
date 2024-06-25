@@ -1,8 +1,11 @@
+
 body {
-  font-family: Verdana, Geneva, sans-serif !important;
-  background-color: white;  /* Set background color to white */
-  color: black;  /* Set text color to black */
+    font-family: Verdana, Geneva, sans-serif !important;
+    /*background-color: rgba(255, 123, 0, 0.432);   Set background color to orange */
+    background-color: white;   /*Set background color to white */
+    color: black;  /* Set text color to black */
 }
+
 
 .side_nav{
     text-align:left;
@@ -10,7 +13,7 @@ body {
     position:fixed;
     display:inline-block;
     font-size:20px;
-
+    
 }
 .side_nav a{
     text-decoration: none;
