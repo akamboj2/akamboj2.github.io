@@ -3,9 +3,16 @@ body {
     font-family: Verdana, Geneva, sans-serif !important;
     /*background-color: rgba(255, 123, 0, 0.432);   Set background color to orange */
     background-color: white;   /*Set background color to white */
-    color: black;  /* Set text color to black */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0;
+}
 
 .side_nav{
     text-align:left;
@@ -22,14 +29,24 @@ body {
 }
 .side_nav a:active{
     font-weight:bold;
-    color:blue;
+    color:green;
 
 }
-*/
- .topnav a:hover {
+
+.topnav a:hover {
     font-weight:bold;
-    
   } 
+
+nav a {
+    /* display: block; */
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #4CAF50;
+    text-decoration: bold;
+}
 
 .body{
   overflow: auto
@@ -228,3 +245,4 @@ figcaption {
     min-height: 50px; /* Ensures consistent caption height */
 
 }
+
