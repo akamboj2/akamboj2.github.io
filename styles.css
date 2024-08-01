@@ -76,10 +76,44 @@ figcaption {
 }
 
 /* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
-.socials{
+
+.social-icons {
     text-align: center;
-    color :white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+.social-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 30px;
+    color: #000;
+}
+.social-icons a:hover {
+    opacity: 0.7;
+}
+  
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0px;
+}
+
+.icon-container a {
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.icon-title {
+    font-size: 12px;
+    /* margin-top: 2px; */
+    text-align: center;
+}
+
 .fa{
     padding: 20px;
     font-size: 30px;
@@ -95,7 +129,7 @@ figcaption {
     opacity: .7;
 }
 
-.fa-linkedin {
+/* .fa-linkedin {
     background: #007bb5;
     color: white;
     font-size:48px;   
@@ -105,7 +139,7 @@ figcaption {
     background: black;
     color: white;
     font-size:48px;   
-}
+} */
 
 .profile_pic{
     display:block;
