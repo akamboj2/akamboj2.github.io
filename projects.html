@@ -244,10 +244,9 @@
             <p>
                 <b>Description:</b> <br>
                 The goal of this internship project was to create a novel multi object tracking architecture using transformers. 
-                This is a reserach project investigating various forms of speech/audio communication for managing a fleet of autonomous robots.
                 I investigated existing Multi Object trakcing methods such as Global Tracking Transformers (GTR), Trackformer and MOTR and sought to improve them.
                 All the existing methods do not utilize a transformers capability to deal with long range dependencies.
-                GTR feeds in detections to a transformer to perform tracking over a window of frames, however, they lose contextual information but only feeding in detections, and they rely heavily on an accurate detector.
+                GTR feeds in detections to a transformer to perform tracking over a window of frames, however, they lose contextual information by only feeding in detections, and they rely heavily on an accurate detector.
                 On the other hand, Trackformer and MOTR autogressively feed in pairs of frames, not just detections, to detect and track objects in the next frame, however, they only work with a window of 2 frames at once.
                 During this internship I helped develop an object tracking architecture that fuses multiple frames of features into the transformer and outputs multiple frames of object detections and tracks as output.
                 
