@@ -85,12 +85,12 @@
             <img src="Abhi Research Portfolio/2024/FACT/FACT overview.png" alt="Project Image" class="collapsible-image">
             <div class="collapsible-content">
                 <div class="project-title">FACT: Fusion and Cross-Modal Transfer for Zero-Shot Human Action Recognition </div>
-                <div class="project-authors">Abhi Kamboj, Duy Anh Nguyen, Minh Do</div>
-                <div class="project-venue">Arxiv 2024, Under review at Conference</div>
+                <div class="project-authors">Abhi Kamboj, Minh Do</div>
+                <div class="project-venue">7th Illinois and Health Summit - Healthy Aging of Brain and Mind with AI - Best Poster Award 3<sup>rd</sup> place</div>
                 <div class="project-links">
                     <!-- <a href="link-to-paper">Paper</a>| 
-                    <a href="link-to-code">Code</a>| 
-                    <a href="link-to-website">Website</a> -->
+                    <!-- <a href="link-to-code">Code</a>|  -->
+                    <a href="files/projects/health_ai_summit_2024.pdf">Poster</a> 
                 </div>
             </div>
         </button>
@@ -120,7 +120,7 @@
                 <div class="project-title">A Survey of IMU Based Cross-Modal Transfer Learning in Human Activity Recognition
                 </div>
                 <div class="project-authors">Abhi Kamboj, Minh Do</div>
-                <div class="project-venue">Arxiv 2024</div>
+                <div class="project-venue">M.S. Thesis 2024</div>
                 <div class="project-links">
                     <a href="https://arxiv.org/abs/2403.15444">Paper</a> 
                     <!--  <a href="link-to-code">Code</a>| 
@@ -327,6 +327,50 @@
                 <b>Full paper accepted as Oral Presentation @ IEEE ROMAN 2022, Naples Italy: <a href="Abhi Research Portfolio/2022 - Grad School/ROMAN_2022_Audio_Interaction (1).pdf">Examining Audio Communication Mechanisms for Supervising Fleets of Agricultural Robots</a></b>
             </p>
         </div>
+        
+        <!--  ECE 527 Project FPGA -->
+        <button class="collapsible">
+            <img src="files/projects/course_projects/ece527/basic_block_scalecuda.png" alt="ScaleCuda Block Diagram" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">ScaleCUDA: A New GPU Programming Framework on Multi-Level Intermediate Representation through ScaleHLS</div>
+                <div class="project-authors">Abhi Kamboj, Armandeep Singh, Hanchen Ye, Deming Chen</div>
+                <div class="project-venue">System on Chip Design Course Project 2022</div>
+                <div class="project-links">
+                    <a href="files/projects/course_projects/ece527/ECE_527_Final_Project_Final_Report.pdf">Paper</a> | 
+                    <a href="https://github.com/akamboj2/scalehls/tree/scalecuda">Implementation-Code</a> | 
+                    <a href="https://github.com/akamboj2/CuBLAS_ScaleCUDATesting">Test-Code</a>
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            <p>
+                <b>Abstract:</b> <br> 
+                Graphics Processing Units (GPUs) and manycore processors in general are some of the most important and powerful tools in modern computing as their ability to massively parallelize computations is an excellent way to accelerate computationally intensive programs.  Due to the massive presence of GPUs in heterogeneous systems, the large design space of parallel programming, and the substantial variance in performance between low and high end implementations of GPU kernels, effectively developing this software is a critical challenge. The development and optimization process can be automated. Successful projects in this area take advantage of the affine properties of the input functionality as identified by polyhedral models in order to output optimized kernels for manycore processors.
+
+                This paper proposes ScaleCUDA, a tool for automated GPU code (CUDA) generation and optimization. ScaleCUDA looks to take advantage of two essential components of high end optimization: identification of affine properties through polyhedral modelling and analysis at multiple levels of abstraction. It will do so by way of ScaleHLS\cite{ye2022scalehls}, a high-level synthesis (HLS) design space exploration tool. ScaleHLS uses MLIR, a multi-level compiler infrastructure, in order to effectively explore the design space at various levels of abstraction and create an optimized HLS design. To translate C++ or HLS C++ input into the desired optimal CUDA output, ScaleCUDA bridges the gap between the polyhedral and CUDA representations in MLIR while taking advantage of the HLS optimization and design space exploration tools of ScaleHLS. We test the pipeline with GEMM C++ code and show similar performance to code directly compiled and optimized through NVIDIA cuda frameworks. 
+                
+                Our implementation is open-sourced and can be accessed on the ScaleCUDA branch here: <a href="https://github.com/akamboj2/scalehls/tree/scalecuda">ScaleCUDA branch</a>. Our experimentation code is also provided here: <a href="https://github.com/akamboj2/CuBLAS_ScaleCUDATesting">Experimentation Code</a>.
+                <div style="display: flex; justify-content: space-between; gap: 10px;">
+                    <figure style="flex: 1; text-align: center;">
+                        <img src="files/projects/course_projects/ece527/basic_block_scalecuda.png" alt="Basic Block Diagram of ScaleCUDA within MLIR" style="width:100%;">
+                        <figcaption>The black lines and boxes represent preexisting components in the MLIR framework. The blue arrows represent ScaleCUDA proposed contributions. Polygiest translates from C++ to the Affine dialect. ScaleHLS translates from HLS C++ to the HLS dialect and the Affine dialect. ScaleCUDA's current implementation lowers the Affine dialect to the NVVM GPU Dialect and future extensions may convert from HLS to NVVM. </figcaption>
+                    </figure>
+                    <figure style="flex: 1; text-align: center;">
+                        <img src="files/projects/course_projects/ece527/ScaleCUDA_pipeline.png" alt="block diagram" style="width:100%;">
+                        <figcaption>This block diagram shows the entire ScaleCUDA pipeline. ScaleCUDA lowers the Affine dialect to the GPU dialect leveraging existing ScaleHLS passes and custom passes.</figcaption>
+                    </figure>
+                    <figure style="flex: 1; text-align: center;">
+                        <img src="files/projects/course_projects/ece527/MatrixAdd_data.png" alt="ScaleCUDA Matrix Addition Performance" style="width:100%;">
+                        <figcaption>The box plot above shows a comparison of performance of ScaleCUDA and CuBLAS. ScaleCUDA performs marginally better, however, with a higher variance.</figcaption>
+                    </figure>
+                    <figure style="flex: 1; text-align: center;">
+                        <img src="files/projects/course_projects/ece527/MatrixMult_data.png" alt="ScaleCUDA Matrix Multiplication Performance" style="width:100%;">
+                        <figcaption>ScaleCUDA Matrix Multiplication Performance: The box plot above shows a comparison of performance of ScaleCUDA, CuBLAS, and the CUDA MMA Op across 5 matrix multiplication trials for each method. ScaleCUDA shows a slightly higher performance in this simple metric.</figcaption>
+                    </figure>
+                </div>
+            </p>
+        </div>
+    
 
         <!-- NVIDIA STR PROJECT -->
         <button class="collapsible">
@@ -368,6 +412,107 @@
             <img src="files/nvidia/STR_example3_UPS.PNG" alt="NVIDIA project" style="width:40%">
         </div>
 
+        <!--  ECE 598 Project Learning Based Robotics -->
+        <button class="collapsible">
+            <img src="files/projects/course_projects/ece598/ll.png" alt="RL Example" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">Human in-the-loop Shared Control</div>
+                <div class="project-authors">Peter Du, Aamir Hasan, Abhi Kamboj</div>
+                <div class="project-venue">Learning Based Robotics Course Project 2021</div>
+                <div class="project-links">
+                    <a href="files/projects/course_projects/ece598/ece598sg_final_project.pdf">Paper</a>  
+                    <!-- <a href="link-to-code">Code</a> | 
+                    <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            <p>
+                <b>Abstract:</b> <br> 
+
+                Learning based approaches for control and decision making have rapidly made their way into various domains as advances in data collection, compute, and algorithmic breakthroughs have allowed machines to perform at levels comparable to (or better) than human experts. 
+                Despite these advances however, there are still domains where a fully autonomous agent with no human supervision or backup faces hurdles from both a regulatory and public trust perspective. 
+                In particular, safety critical applications of autonomy without human oversight remains a contested approach. 
+                The most prominent example of this can be seen in the autonomous driving domain where companies continue to train and require ``safety drivers'' to monitor and be ready to take over vehicle control at any given moment. 
+                Even in fully autonomous products such as Waymo One's autonomous taxi service in Phoenix, safety drivers are often used during inclement weather or dispatched to take control when the vehicle senses difficulty. 
+                
+                The goal of our project is to look at different ways of characterising uncertainty in an autonomous policy and use them to develop control that is shared between the human and the autonomous agent. 
+                To this end, we look at how this information can be obtained from reinforcement learning (RL) based policies and imitation learning based policies. 
+                In the RL policies, we first consider a Deep Q-Learning (DQN) policy without modification and use the Q-values provided by the network. 
+                We then retrain the policy using Bayesian Deep Learning to more explicitly characterise uncertainty. 
+                We then directly try to learn a Bayesian Neural Network policy through behaviour cloning. 
+                During runtime, the policies are preempted when various uncertainty thresholds are reached and a human is asked to provide the next action. 
+                We compare the performance of these shared policies among each other as well as a fully autonomous policy to see which methods of requesting human input has the best overall performance. 
+                 
+                <div style="display: flex; justify-content: space-between; gap: 10px;">
+                    <figure style="flex: 1; text-align: center;">
+                        <img src="files/projects/course_projects/ece598/ll.png" alt="RL sample" style="width:50%;">
+                        <figcaption>The Lunar Lander environment</figcaption>
+                    </figure>
+                    <figure style="flex: 1; text-align: center;">
+                        <img src="files/projects/course_projects/ece598/rewards.png" alt="results-rewards" style="width:60%;">
+                        <figcaption>The rewards accrued by each model</figcaption>
+                    </figure>
+                </div>
+            </p>
+        </div>
+
+
+        <!-- Senior Thesis -->
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2021 - Senior Year/SP21-ECE499-Thesis-Kamboj, Abhi.jpeg" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">The Optimal Audio Interface For Teleoperation On An Autonomous Farm </div>
+                <div class="project-authors">Abhi Kamboj</div>
+                <div class="project-venue">Undergradaute Senior Thesis 2021</div>
+                <div class="project-links">
+                    <a href="https://www.ideals.illinois.edu/items/132047">Paper</a> 
+                    <!-- <a href="link-to-code">Code</a> | 
+                    <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            <p>
+                <b>Abstract:</b> <br> 
+                As robots become more prevalent, designing an efficient communication system for human-robot interaction becomes an important yet challenging problem. Visual and tactile interfaces are very common in autonomous robots and intelligent systems; however, audio-based interfaces are a relatively new and developing area. We study the scenario in which a fleet of agricultural robots need to communicate a failure case for a human operator to diagnose and respond to in a teleoperation setting. These robots must have a simple yet effective communication system so farmers that may not have robotic experience can operate them. In this thesis project, we develop an agbot simulation platform and various audio communication techniques and characterize the most effective and natural interface. First, autonomous farms of varying complexity are created using the OpenAI Gridworld simulation. Then, a user study with 11 participants is conducted with this simulation to test three audio communication methods: sounds, single-word commands, and full natural language communication. As the robots on the farm experience and report errors, the human is tasked with diagnosing them and keeping the robots going. Afterwards, the user completes a survey to determine the overall effectiveness of the system. The results suggest that the human’s perception of the system is mainly impacted by the audio communication technique not the complexity, and the single word commands provide the best interface. However, not all the results were statistically significant, potentially because of the small sample size, and further studies should be conducted on this topic to confirm the results.
+                 
+                <!-- <figure>
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/" alt="Global Tracking Transformer Architecture" style="width:30%">
+                    <figcaption>Sample caption goes here</figcaption>
+                </figure> -->
+            </p>
+        </div>
+    
+        <!-- ECE 484 Safe Autonomy Project-->
+        <button class="collapsible">
+            <img src="files/projects/course_projects/ece484/successful_left.png" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">Lane Following Autonomous Vehicle Pipeline</div>
+                <div class="project-authors">Neeloy Chakraborty, Abhi Kamboj, Pranav Sriram, Pavitra Shadvani</div>
+                <div class="project-venue">Safe Autonomy Course Project 2021</div>
+                <div class="project-links">
+                    <a href="link-to-paper">Paper</a> 
+                    <!-- <a href="link-to-code">Code</a> |  -->
+                    <!-- <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            <p>
+                <b>Abstract:</b> <br> 
+                Lane following is a crucial component of self-driving cars, contributing to both the safety and the comfort of the experience. However, creating a robust lane-following system that can operate in unfamiliar environments is a difficult problem. Existing methods primarily use gradient and light thresholding for lane detection and advanced global positioning and localization techniques for lane following. 
+
+                We propose a pipeline with a similar lane detection module that implements light and gradient thresholding techniques and a lane following module that dynamically generates the desired way-points for the vehicle to follow. A PD controller is then used to generate the low-level action based on the current pose of the vehicle and the generated desired way-point. The AV pipeline was tested on a simulated GEM vehicle in a Gazebo environment.
+                
+                For quantitative results, we evaluate the safety and quality of the system using two metrics: average distance travelled and total time taken. We ran three separate trials in the simulator (with different starting coordinates) and measured these metrics to analyze the performance and efficiency of our pipeline. We also compare the path taken by a PD controller using hardcoded way-points for the simulated track and the path taken by our system to observe a mismatch in performance. Experiments run show that our system fails primarily on straight roads whenever the lanes are failed to be detected. Our image filtering method must be further tuned to better detect lanes.
+                <figure>
+                    <img src="files/projects/course_projects/ece484/image_filtering.png" alt="Block Diagram of lane following steps" style="width:30%">
+                    <figcaption>Steps used in image filtering unit.</figcaption>
+                </figure>
+            </p>
+        </div>
+    
 
 
         <!-- EPFL ML Building Classification -->
@@ -413,18 +558,17 @@
         </div>
 
 
-
         <!-- EagleCAD Solar MPPT Charge Controller Design-->
         <button class="collapsible">
             <img src="Abhi Research Portfolio/2019 - Sophmore Year/circuit.png" alt="Project Image" class="collapsible-image">
             <div class="collapsible-content">
                 <div class="project-title">EagleCAD Solar MPPT Charge Controller Design</div>
-                <div class="project-authors">Authors: Abhi Kamboj, Or Dantsker, Marco Caccamo</div>
+                <div class="project-authors">Abhi Kamboj, Or Dantsker, Marco Caccamo</div>
                 <!-- <div class="project-description">Designed a Maximum Power Point Tracker (MPPT) solar charge controller on for an autonomous ariel vehicle.</div> -->
                 <div class="project-venue">PURE Undergraduate Research Symposium, University of Illinois, Urbana-Champaign, IL, 2018</div>
                 <div class="project-links">
-                    <!-- <a href="Abhi Research Portfolio/2020 - Junior Year/ML_Project_EPFL.pdf">Paper</a>| 
-                    <a href="https://github.com/akamboj2/MLBuildingClassification">Code</a> -->
+                    <a href="Abhi Research Portfolio/2019 - Sophmore Year/Abhi's PURE 2018 MPPT Poster_revised.png">Poster</a>
+                    <!-- <a href="https://github.com/akamboj2/MLBuildingClassification">Code</a> -->
                     <!-- <a href="link-to-website">Website</a> -->
                 </div>
             </div>
@@ -440,6 +584,7 @@
                 </figure>
             </p>
         </div>
+
 
         <!-- NSF REU Project -->
         <button class="collapsible">
@@ -478,6 +623,10 @@
             </p>
         </div>
        
+        
+
+
+        
     </div>
     </div>
     

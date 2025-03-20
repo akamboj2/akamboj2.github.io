@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+
+    <div class="container">
+    <script>
+        $.get("navigation.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+    <div id="nav-placeholder">
+    </div>
+    <div class = "main_text">
+    <body >
+        <h1 id="academics">
+            Mentorship: People help people help people ...
+        </h1>
+        <div style="display: flex; align-items: flex-start;">
+            <div>
+            <h2>Those who have mentored me:</h2>
+            <ul>
+                <li><a href="https://minhdo.ece.illinois.edu/">Dr. Minh N. Do</a></li>
+                <li><a href="https://krdc.web.illinois.edu/">Dr. Katie Driggs-Campbell</a></li>
+                <li><a href="https://dchen.ece.illinois.edu/">Dr. Deming Chen</a></li>
+                <li><a href="https://www.linkedin.com/in/wilsongerald/">Dr. Gerald Wilson</a></li>
+                <li><a href="https://www.linkedin.com/in/yutingwchen/">Dr. Yuting Chen</a></li>
+                <li><a href="https://www.cs.utexas.edu/~isler/">Dr. Volkan Isler</a></li>
+                <li><a href="https://www-users.cse.umn.edu/~interran/">Dr. Victoria Interrante</a></li>
+            </ul>
+            </div>
+            <img src="files/hodgson-nancy-predoctoral-mentorship-teaser.jpg" alt="Mentorship Image" style="margin-left: 20px; height: 300px;">
+        </div>
+        <h2>Those I have mentored:</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/aahant/">Aahan Thapliyal</a></li>
+            <li><a href="https://www.linkedin.com/in/kylebli/">Kyle Li</a></li>
+            <li><a href="https://www.linkedin.com/in/jincan-ye-7b6238290/">Jincan Ye</a></li>
+        <!-- </ul>
+        <h2> Mentorship Programs I am a part of </h2>
+        <ul> -->
+            <li><a href="https://www.istcoalition.org/education/mentor-matching-engine/">Mentor Match Engine</a> - Mentor high school students virtually every school year, 2022-2025</li>
+            <li><a href="https://cricketmedia.com/tryengineeringtogether/">IEEE TryEngineering</a> - Mentor Elementary students virtually in STEM topics every school year, 2020-2025</li>
+            <li><a href="https://hkn.illinois.edu/">UIUC HKN</a> - Ran course review sessions and held 1:1 tutoring sessions, 2018-2022</li>
+        </ul>
+        <h2>I have peer reviewed for the following venues:</h2>
+        <ul>
+            <li><a href="https://mula-workshop.github.io/">Multimodal Learning and Applications CVPR Workshop 2024, 2025</a></li>
+            <li><a href="https://iclr.cc/">International Conference on Learning Representations (ICLR) 2025</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76">IEEE Transactions on Circuits and Systems for Video Technology Journal (IEEE TCSVT)</a></li>
+            <li><a href="https://unireps.org/2024/">Unifying Representations 2024 Neurips (UniReps)</a> - Received best reviewer award</li>
+            <li><a href="https://neuralcompression.github.io/workshop24">Machine Learning and Compression 2024 Neurips Workshop</a></li>
+            <li><a href="https://safegenaiworkshop.github.io/">Safe Generative AI 2024 Neurips Workshop</a></li>
+            <li><a href="https://ro-man2023.org/main">IEEE Conference on Robot Human Interaction (RO-MAN) 2023</a></li>
+          </ul>
+        
+          
+
+    </body>
+    </div>
+</div>
+</html>
