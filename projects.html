@@ -54,6 +54,29 @@
         </div> -->
     
 
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2024/perfect_alignment/PA_teaser_half.png" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">Towards Achieving Perfect Multimodal Alignment</div>
+                <div class="project-authors">Abhi Kamboj, Minh N. Do</div>
+                <div class="project-venue">Arxiv 2024</div>
+                <div class="project-links">
+                    <a href="https://arxiv.org/abs/2503.15352">Paper</a> 
+                    <!-- <a href="link-to-code">Code</a> | 
+                    <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            <p>
+                <b>Abstract:</b> <br> 
+                Multimodal alignment constructs a joint latent vector space where modalities representing the same concept map to neighboring latent vectors. We formulate this as an inverse problem and show that, under certain conditions, paired data from each modality can map to equivalent latent vectors, which we refer to as perfect alignment. When perfect alignment cannot be achieved, it can be approximated using the Singular Value Decomposition (SVD) of a multimodal data matrix. Experiments on synthetic multimodal Gaussian data verify the effectiveness of our perfect alignment method compared to a learned contrastive alignment method. We further demonstrate the practical application of cross-modal transfer for human action recognition, showing that perfect alignment significantly enhances the model's accuracy. We conclude by discussing how these findings can be applied to various modalities and tasks and the limitations of our method. We hope these findings inspire further exploration of perfect alignment and its applications in representation learning.
+                <figure>
+                    <img src="Abhi Research Portfolio/2024/perfect_alignment/PA_teaser.png" alt="Perfect Alignment Diagram" style="width:80%">
+                    <figcaption>Hypothesized Perfect Alignment Framework</figcaption>
+                </figure>
+            </p>
+        </div>
 
         <!-- C3T fusion and transfer -->
         <button class="collapsible">
@@ -63,7 +86,8 @@
                 <div class="project-authors">Abhi Kamboj, Duy Anh Nguyen, Minh Do</div>
                 <div class="project-venue">Arxiv 2024, Under review at Conference</div>
                 <div class="project-links">
-                    <a href="Abhi Research Portfolio/2024/ARXIV_C3T_Crossmodal_Transfer_Through_Time.pdf">Paper</a>  
+                    <!-- <a href="Abhi Research Portfolio/2024/ARXIV_C3T_Crossmodal_Transfer_Through_Time.pdf">Paper</a>   -->
+                    <a href="https://arxiv.org/abs/2407.16803v3">Paper</a>  
                     <!-- <a href="link-to-code">Code</a>| 
                     <a href="link-to-website">Website</a> -->
                 </div>
@@ -74,7 +98,7 @@
                 <b>Abstract:</b> <br>
                     In order to unlock the potential of diverse sensors, we investigate a method to transfer knowledge between modalities using the structure of a unified multimodal representation space for Human Action Recognition (HAR). We formalize and explore an understudied cross-modal transfer setting we term Unsupervised Modality Adaptation (UMA), where the modality used in testing is not used in supervised training, i.e. zero labeled instances of the test modality are available during training. We develop three methods to perform UMA: Student-Teacher (ST), Contrastive Alignment (CA), and Cross-modal Transfer Through Time (C3T). Our extensive experiments on various camera+IMU datasets compare these methods to each other in the UMA setting, and to their empirical upper bound in the supervised setting. The results indicate C3T is the most robust and highest performing by at least a margin of 8%, and nears the supervised setting performance even in the presence of temporal noise. This method introduces a novel mechanism for aligning signals across time-varying latent vectors, extracted from the receptive field of temporal convolutions. Our findings suggest that C3T has significant potential for developing generalizable models for time-series sensor data, opening new avenues for multi-modal learning in various applications.
                 <figure>
-                    <img src="Abhi Research Portfolio/2024/FACT/T-Fact_img.png" alt="Time continuous extension of FACT (T-FACT) Diagram" style="width:40%">
+                    <img src="Abhi Research Portfolio/2024/FACT/T-Fact_img.png" alt="Time continuous extension of FACT (T-FACT) Diagram" style="width:80%">
                     <figcaption>A diagram of the C3T</figcaption>
                 </figure>
             </p>
