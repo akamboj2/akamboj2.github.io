@@ -53,13 +53,38 @@
             </p>
         </div> -->
     
-
+        <!-- Robult -->
         <button class="collapsible">
-            <img src="Abhi Research Portfolio/2024/perfect_alignment/PA_teaser_half.png" alt="Project Image" class="collapsible-image">
+            <img src="Abhi Research Portfolio/2025/robult/pid.png" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title"> Robult: Leveraging Redundancy and Modality-Specific Features for Robust Multimodal Learning</div>
+                <div class="project-authors">Duy A. Nguyen, Abhi Kamboj, Minh N. Do</div>
+                <div class="project-venue">IJCAI 2025</div>
+                <div class="project-links">
+                    <a href="https://ijcai-preprints.s3.us-west-1.amazonaws.com/2025/7733.pdf">Paper</a>  <!-- |--> 
+                    <!-- <a href="link-to-code">Code</a> |  -->
+                    <!-- <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            <p>
+                <b>Abstract:</b> <br> 
+                    Addressing missing modalities and limited labeled data is crucial for advancing robust multimodal learning. We propose Robult, a scalable framework designed to mitigate these challenges by preserving modality-specific information and leveraging redundancy through a novel information-theoretic approach. Robult optimizes two core objectives: (1) a soft Positive-Unlabeled (PU) contrastive loss that maximizes task-relevant feature alignment while effectively utilizing limited labeled data in semi-supervised settings, and (2) a latent reconstruction loss that ensures unique modality-specific information is retained. These strategies, embedded within a modular design, enhance performance across various downstream tasks and ensure resilience to incomplete modalities during inference. Experimental results across diverse datasets validate that Robult achieves superior performance over existing approaches in both semi-supervised learning and missing modality contexts. Furthermore, its lightweight design promotes scalability and seamless integration with existing architectures, making it suitable for real-world multimodal applications.
+                <figure>
+                    <img src="Abhi Research Portfolio/2025/robult/robult_architecture.png" alt="Global Tracking Transformer Architecture" style="width:80%">
+                    <figcaption>Overall Architecture and Flow of the Robult Method</figcaption>
+                </figure>
+            </p>
+        </div>
+    
+        <!-- Perfect Alignment -->
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2025/perfect_alignment/PA_teaser_half.png" alt="Project Image" class="collapsible-image">
             <div class="collapsible-content">
                 <div class="project-title">Towards Achieving Perfect Multimodal Alignment</div>
                 <div class="project-authors">Abhi Kamboj, Minh N. Do</div>
-                <div class="project-venue">Arxiv 2024</div>
+                <div class="project-venue">Arxiv 2025</div>
                 <div class="project-links">
                     <a href="https://arxiv.org/abs/2503.15352">Paper</a> 
                     <!-- <a href="link-to-code">Code</a> | 
@@ -72,7 +97,7 @@
                 <b>Abstract:</b> <br> 
                 Multimodal alignment constructs a joint latent vector space where modalities representing the same concept map to neighboring latent vectors. We formulate this as an inverse problem and show that, under certain conditions, paired data from each modality can map to equivalent latent vectors, which we refer to as perfect alignment. When perfect alignment cannot be achieved, it can be approximated using the Singular Value Decomposition (SVD) of a multimodal data matrix. Experiments on synthetic multimodal Gaussian data verify the effectiveness of our perfect alignment method compared to a learned contrastive alignment method. We further demonstrate the practical application of cross-modal transfer for human action recognition, showing that perfect alignment significantly enhances the model's accuracy. We conclude by discussing how these findings can be applied to various modalities and tasks and the limitations of our method. We hope these findings inspire further exploration of perfect alignment and its applications in representation learning.
                 <figure>
-                    <img src="Abhi Research Portfolio/2024/perfect_alignment/PA_teaser.png" alt="Perfect Alignment Diagram" style="width:80%">
+                    <img src="Abhi Research Portfolio/2025/perfect_alignment/PA_teaser.png" alt="Perfect Alignment Diagram" style="width:80%">
                     <figcaption>Hypothesized Perfect Alignment Framework</figcaption>
                 </figure>
             </p>
