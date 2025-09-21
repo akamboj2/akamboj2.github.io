@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abhi Kamboj - AI Researcher & Engineer</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <style>
+            .hero-section {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 60px 20px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .hero-section h1 {
+                font-size: 3em;
+                margin-bottom: 10px;
+                font-weight: 300;
+            }
+            .hero-section .subtitle {
+                font-size: 1.3em;
+                opacity: 0.9;
+                margin-bottom: 30px;
+            }
+            .section {
+                margin: 40px 0;
+                padding: 0 20px;
+            }
+            .research-highlight {
+                background: #f8f9fa;
+                padding: 30px;
+                border-radius: 10px;
+                margin: 20px 0;
+                border-left: 4px solid #667eea;
+            }
+            .interests-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                margin: 30px 0;
+            }
+            .interest-card {
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                border-top: 3px solid #764ba2;
+            }
+            .collapsible {
+                background-color: #f1f1f1;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                margin: 10px 0;
+                transition: 0.3s;
+            }
+            .collapsible:hover {
+                background-color: #ddd;
+            }
+            .collapsible:after {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+            .active:after {
+                content: "\2212";
+            }
+            .content {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+                background-color: #f9f9f9;
+            }
+            .social-links {
+                margin: 20px 0;
+            }
+            .social-links a {
+                margin: 0 10px;
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <script>
+                $.get("navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+            <div id="nav-placeholder"></div>
+            
+            <div class="hero-section">
+                <h1>Abhi Kamboj</h1>
+                <div class="subtitle">AI Researcher | NSF Graduate Fellow | Multimodal Learning Enthusiast</div>
+                <div class="social-links">
+                    <a href="https://github.com/akamboj2">GitHub</a>
+                    <a href="https://www.linkedin.com/in/abhi-kamboj">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=SPO7k4wAAAAJ&hl=en&oi=ao">Google Scholar</a>
+                    <a href="mailto:Akamboj2@illinois.edu">Email</a>
+                </div>
+            </div>
+
+            <div class="main_text">
+                <div class="section">
+                    <h2>My Journey in AI</h2>
+                    <p>
+                        I'm a PhD candidate at UIUC and NSF Graduate Research Fellow passionate about teaching machines to understand the world through multiple senses—just like humans do. My research focuses on multimodal learning, where I explore how AI systems can align and transfer knowledge between different types of data: videos, sensor readings, language, and beyond.
+                    </p>
+                    <p>
+                        What started as curiosity about virtual reality during high school (building hand-tracking systems with Oculus Rift) has evolved into a deep fascination with how AI can bridge the gap between different forms of human and machine perception. From developing neural networks that understand driving behavior at Netradyne to pioneering temporal reasoning models at Google, I'm driven by the potential to create AI that truly comprehends our complex, multi-sensory world.
+                    </p>
+                </div>
+
+                <div class="research-highlight">
+                    <h3>Current Research Spotlight</h3>
+                    <p>
+                        My recent work, <strong>C3T (Cross-Modal Transfer Through Time)</strong>, tackles a fundamental challenge in AI: how to teach models to understand activities by learning from both video and sensor data simultaneously. This approach achieved a 43.5% improvement in accuracy across multiple datasets and shows promise for applications ranging from healthcare monitoring to brain-computer interfaces.
+                    </p>
+                    <p>
+                        At Google this summer, I pushed the boundaries of temporal reasoning in AI, developing systems that can understand complex videos over time—bringing us 10% closer to human-level performance on challenging reasoning tasks.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>What Drives Me</h2>
+                    <div class="interests-grid">
+                        <div class="interest-card">
+                            <h4>🧠 Multimodal AI</h4>
+                            <p>Building systems that understand the world through multiple senses—vision, motion, language, and beyond. My goal is creating AI that perceives as richly as humans do.</p>
+                        </div>
+                        <div class="interest-card">
+                            <h4>🎵 Classical Indian Music</h4>
+                            <p>As a performer of classical Indian music, I'm fascinated by how rhythm, melody, and improvisation mirror the temporal patterns I study in AI research.</p>
+                        </div>
+                        <div class="interest-card">
+                            <h4>📈 Market Analytics</h4>
+                            <p>I apply ML insights to financial markets, exploring how data patterns can inform investment strategies—a perfect blend of technical skills and real-world impact.</p>
+                        </div>
+                        <div class="interest-card">
+                            <h4>🏐 Beach Volleyball</h4>
+                            <p>Chicago's lakefront is my playground. There's something about the combination of strategy, teamwork, and athletic precision that keeps me coming back to the courts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>From Lab to Impact</h2>
+                    <p>
+                        My work has been published at top-tier venues like IJCAI, CVPR, and NeurIPS, but what excites me most is the potential for real-world impact. Whether it's helping paralyzed individuals control robotic arms through better neural decoding, or creating more intuitive human-robot interaction systems, I believe AI should enhance human capabilities and improve lives.
+                    </p>
+                    <p>
+                        I've been fortunate to work across industry and academia—from optimizing edge AI at NVIDIA to exploring agricultural robotics, from big data platforms at Western Digital to cutting-edge research at EPFL in Switzerland. Each experience has shaped my perspective on how to build AI systems that are both technically sophisticated and practically useful.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>Looking Forward</h2>
+                    <p>
+                        As I approach the completion of my PhD in May 2026, I'm excited about the next chapter. I'm particularly interested in roles where I can continue pushing the boundaries of multimodal AI while seeing the direct impact of my work on users and society. Whether in industry research, product development, or continued academic exploration, I'm driven by the opportunity to create AI systems that truly understand and enhance the human experience.
+                    </p>
+                </div>
+
+                <!-- Collapsible Academic Details -->
+                <div class="section">
+                    <button class="collapsible">🎓 Academic Background & Honors</button>
+                    <div class="content">
+                        <div style="padding: 20px 0;">
+                            <h3>University of Illinois at Urbana-Champaign</h3>
+                            <ul>
+                                <li>Ph.D. Electrical and Computer Engineering, expected May 2026 (GPA: 3.6/4.0)</li>
+                                <li>M.S. Electrical and Computer Engineering, May 2024</li>
+                                <li>B.S. Computer Engineering + Engineering Entrepreneurship, May 2021 (GPA: 3.9/4.0)</li>
+                                <li><a href="https://abhi-leadership-certificate.weebly.com/">Leadership Certificate, May 2021</a></li>
+                            </ul>
+                            
+                            <h3>École Polytechnique Fédérale de Lausanne (EPFL)</h3>
+                            <ul>
+                                <li>Academic Exchange Semester, Fall 2019</li>
+                            </ul>
+
+                            <h3>Honors and Recognition</h3>
+                            <ul>
+                                <li><strong>NSF Graduate Research Fellow</strong> (2023-2026)</li>
+                                <li><strong>Best Reviewer Award</strong>, NeurIPS UniReps Workshop 2024</li>
+                                <li><a href="https://honors.illinois.edu/">Chancellor's Scholar - Campus Honors Program</a></li>
+                                <li><a href="https://students.grainger.illinois.edu/jscholar/about/">James Scholar - Engineering Honors Program</a></li>
+                                <li><a href="https://etakappanu.web.engr.illinois.edu/">IEEE Eta Kappa Nu (HKN)</a> - ECE Honors Fraternity</li>
+                                <li><a href="https://tbp.ec.illinois.edu/">Tau Beta Pi (TBP)</a> Engineering Honors Fraternity</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="collapsible">📚 Key Coursework</button>
+                    <div class="content">
+                        <div style="padding: 20px 0;">
+                            <h4>Advanced AI & Machine Learning</h4>
+                            <ul>
+                                <li><a href="https://ece.illinois.edu/academics/courses/ece543">ECE 543 Statistical Learning Theory</a></li>
+                                <li><a href="https://courses.grainger.illinois.edu/ece544na/fa2022/_site/">ECE 544 Pattern Recognition</a></li>
+                                <li><a href="http://slazebni.cs.illinois.edu/fall21/">ECE 549/CS 543 Computer Vision</a></li>
+                                <li><a href="http://saurabhg.web.illinois.edu/teaching/ece598sg/fa2020/">ECE/CS 598SG Learning Based Robotics</a></li>
+                            </ul>
+                            
+                            <h4>Signal Processing & Information Theory</h4>
+                            <ul>
+                                <li><a href="https://ece.illinois.edu/academics/courses/ece513">ECE 513 Vector Space Signal Processing</a></li>
+                                <li><a href="https://ece.illinois.edu/academics/courses/ece563">ECE 563 Information Theory</a></li>
+                                <li><a href="https://courses.grainger.illinois.edu/ece534/sp2022/">ECE 534 Random Processes</a></li>
+                            </ul>
+                            
+                            <h4>Systems & Algorithms</h4>
+                            <ul>
+                                <li><a href="https://courses.engr.illinois.edu/cs473/sp2022/">CS 473 Algorithms</a></li>
+                                <li><a href="https://ece.illinois.edu/academics/courses/ece527">ECE 527 System on Chip Design</a></li>
+                                <li><a href="https://ece.illinois.edu/academics/courses/ece411">ECE 411 Computer Organization and Design</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" style="text-align: center; margin-top: 50px;">
+                    <h3><a href="./fun.html" style="color: #667eea; text-decoration: none;">🎉 Want to know more fun stuff about me?</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                });
+            }
+        </script>
+    </body>
+</html>

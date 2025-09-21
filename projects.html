@@ -47,11 +47,36 @@
 
                  
                 <figure>
-                    <img src="files/todo-qm.jpg" alt="Global Tracking Transformer Architecture" style="width:30%">
+                    <img src="files/todo-qm.jpg" alt="Global Tracking Transformer Architecture" style="width:30%;max-width:480px;">
                     <figcaption>Sample caption goes here</figcaption>
                 </figure>
             </p>
         </div> -->
+    
+        <!-- Google TVA -->
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2025/tva/tva_big.png" alt="TVA Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">Temporal Video Agents: A Multi-agent Reasoning Framework for Video Question Answering</div>
+                <div class="project-authors">Abhi Kamboj, Gaurav Kumar, Krista Holden, Madhumitha Saravanan, Pradyumna Narayana</div>
+                <div class="project-venue">Google, PhD Internship 2025</div>
+                <div class="project-links">
+                    <!-- <a href="link-to-paper">Paper</a> | 
+                    <a href="link-to-code">Code</a> | 
+                    <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            <p>
+                <b>Abstract:</b> <br> 
+                    We present Temporal Video Agents (TVA), a modular multi-agent framework addressing major perception and reasoning failures in standalone Multimodal Large Language Models (MLLMs) for complex video understanding. Guided by failure analysis on the Minerva benchmark—highlighting issues in temporal localization, spatial reasoning under motion, and text recognition—TVA decomposes video question-answering into structured sub-problems, coordinated by specialized agents such as a Planner and a Temporal Scoper within a dynamic, question-adaptive workflow. Experiments show TVA improves accuracy by 2.6% over a strong Gemini 2.5 Pro baseline, narrowing the gap to human performance by nearly 10%. Notably, we notice that smaller models benefit from explicit external tools, while larger models exhibit intrinsic perception skills unlocked via prompting, effectively "hallucinating" tool use. These findings offer a new perspective on designing robust and efficient multimodal systems, suggesting a paradigm shift from universal tool integration towards adaptive, prompt-driven perception.
+                <figure>
+                    <img src="Abhi Research Portfolio/2025/tva/tva_teaser.png" alt="TVA Teaser" style="width:100%;max-width:900px;">
+                    <figcaption> <b>Temporal Video Agents Overview:</b> An illustrative comparison showing how TVA (bottom) succeed where a standalone MLLM (top) fails. TVA decomposes the complex query by localizing the key event (the 3-point shot) and identifying the correct player, leading to an accurate answer.</figcaption>
+                </figure>
+            </p>
+        </div>
     
         <!-- Robult -->
         <button class="collapsible">
@@ -71,9 +96,10 @@
             <p>
                 <b>Abstract:</b> <br> 
                     Addressing missing modalities and limited labeled data is crucial for advancing robust multimodal learning. We propose Robult, a scalable framework designed to mitigate these challenges by preserving modality-specific information and leveraging redundancy through a novel information-theoretic approach. Robult optimizes two core objectives: (1) a soft Positive-Unlabeled (PU) contrastive loss that maximizes task-relevant feature alignment while effectively utilizing limited labeled data in semi-supervised settings, and (2) a latent reconstruction loss that ensures unique modality-specific information is retained. These strategies, embedded within a modular design, enhance performance across various downstream tasks and ensure resilience to incomplete modalities during inference. Experimental results across diverse datasets validate that Robult achieves superior performance over existing approaches in both semi-supervised learning and missing modality contexts. Furthermore, its lightweight design promotes scalability and seamless integration with existing architectures, making it suitable for real-world multimodal applications.
-                <figure>
-                    <img src="Abhi Research Portfolio/2025/robult/robult_architecture.png" alt="Global Tracking Transformer Architecture" style="width:80%">
-                    <figcaption>Overall Architecture and Flow of the Robult Method</figcaption>
+                <figure class="robult-architectures" style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;align-items:flex-start;">
+                    <img src="Abhi Research Portfolio/2025/robult/robult_architecture_a.png" alt="Robult Architecture A" style="width:49%;max-width:480px;">
+                    <img src="Abhi Research Portfolio/2025/robult/robult_architecture_b.png" alt="Robult Architecture B" style="width:49%;max-width:480px;">
+                    <figcaption style="width:100%;text-align:center;margin-top:0.5rem;">Overall Architecture and Flow of the Robult Method</figcaption>
                 </figure>
             </p>
         </div>
@@ -97,7 +123,7 @@
                 <b>Abstract:</b> <br> 
                 Multimodal alignment constructs a joint latent vector space where modalities representing the same concept map to neighboring latent vectors. We formulate this as an inverse problem and show that, under certain conditions, paired data from each modality can map to equivalent latent vectors, which we refer to as perfect alignment. When perfect alignment cannot be achieved, it can be approximated using the Singular Value Decomposition (SVD) of a multimodal data matrix. Experiments on synthetic multimodal Gaussian data verify the effectiveness of our perfect alignment method compared to a learned contrastive alignment method. We further demonstrate the practical application of cross-modal transfer for human action recognition, showing that perfect alignment significantly enhances the model's accuracy. We conclude by discussing how these findings can be applied to various modalities and tasks and the limitations of our method. We hope these findings inspire further exploration of perfect alignment and its applications in representation learning.
                 <figure>
-                    <img src="Abhi Research Portfolio/2025/perfect_alignment/PA_teaser.png" alt="Perfect Alignment Diagram" style="width:80%">
+                    <img src="Abhi Research Portfolio/2025/perfect_alignment/PA_teaser.png" alt="Perfect Alignment Diagram" style="width:80%;max-width:720px;">
                     <figcaption>Hypothesized Perfect Alignment Framework</figcaption>
                 </figure>
             </p>
@@ -123,7 +149,7 @@
                 <b>Abstract:</b> <br>
                     In order to unlock the potential of diverse sensors, we investigate a method to transfer knowledge between modalities using the structure of a unified multimodal representation space for Human Action Recognition (HAR). We formalize and explore an understudied cross-modal transfer setting we term Unsupervised Modality Adaptation (UMA), where the modality used in testing is not used in supervised training, i.e. zero labeled instances of the test modality are available during training. We develop three methods to perform UMA: Student-Teacher (ST), Contrastive Alignment (CA), and Cross-modal Transfer Through Time (C3T). Our extensive experiments on various camera+IMU datasets compare these methods to each other in the UMA setting, and to their empirical upper bound in the supervised setting. The results indicate C3T is the most robust and highest performing by at least a margin of 8%, and nears the supervised setting performance even in the presence of temporal noise. This method introduces a novel mechanism for aligning signals across time-varying latent vectors, extracted from the receptive field of temporal convolutions. Our findings suggest that C3T has significant potential for developing generalizable models for time-series sensor data, opening new avenues for multi-modal learning in various applications.
                 <figure>
-                    <img src="Abhi Research Portfolio/2024/FACT/T-Fact_img.png" alt="Time continuous extension of FACT (T-FACT) Diagram" style="width:80%">
+                    <img src="Abhi Research Portfolio/2024/FACT/T-Fact_img.png" alt="Time continuous extension of FACT (T-FACT) Diagram" style="width:80%;max-width:720px;">
                     <figcaption>A diagram of the C3T</figcaption>
                 </figure>
             </p>
@@ -153,9 +179,9 @@
                 Extensive experiments on a wide range of RGB-IMU datasets demonstrate that FACT significantly outperforms existing methods in zero-shot cross-modal transfer.
                 
                 <figure>
-                    <img src="Abhi Research Portfolio/2024/FACT/FACT overview.png" alt="FACT architecture overview" style="width:40%">
-                    <img src="Abhi Research Portfolio/2024/FACT/T-Fact_img.png" alt="Time continuous extension of FACT (T-FACT) Diagram" style="width:40%">
-                    <figcaption>Left: An overview of the FACT method. Right: A diagram of the time continous FACT model T-FACT.</figcaption>
+                    <img src="Abhi Research Portfolio/2024/FACT/FACT overview.png" alt="FACT architecture overview" style="width:80%;max-width:800px;">
+                    <!-- <img src="Abhi Research Portfolio/2024/FACT/T-Fact_img.png" alt="Time continuous extension of FACT (T-FACT) Diagram" style="width:40%;max-width:480px;"> -->
+                    <figcaption>An overview of the FACT method. </figcaption>
                 </figure>
             </p>
         </div>
@@ -193,17 +219,17 @@
 
                 <div class="figure-container">
                     <figure>
-                        <img src="Abhi Research Portfolio/2024/cross-modal_review/HAR_metrics (1).png" alt="Global Tracking Transformer Architecture">
+                        <img src="Abhi Research Portfolio/2024/cross-modal_review/HAR_metrics (1).png" alt="Global Tracking Transformer Architecture" style="width:100%;max-width:480px;">
                         <figcaption> A graph-like visualization plotting HAR-related tasks to compare each task with the other based on temporal length involved in the task as well as the abstractness or coarseness of the task.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="Abhi Research Portfolio/2024/cross-modal_review/venn_diagram.png" alt="Global Tracking Transformer Architecture">
+                     </figure>
+                     <figure>
+                        <img src="Abhi Research Portfolio/2024/cross-modal_review/venn_diagram.png" alt="Global Tracking Transformer Architecture" style="width:100%;max-width:480px;">
                         <figcaption>A comparison of sensor fusion and cross modal transfer.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="Abhi Research Portfolio/2024/cross-modal_review/cross_modal_learning (1).png" alt="Global Tracking Transformer Architecture">
+                     </figure>
+                     <figure>
+                        <img src="Abhi Research Portfolio/2024/cross-modal_review/cross_modal_learning (1).png" alt="Global Tracking Transformer Architecture" style="width:100%;max-width:480px;">
                         <figcaption>A diagram showing two types of cross-modal transfer.</figcaption>
-                    </figure>
+                     </figure>
 
                 </div>
             </p>
@@ -231,7 +257,7 @@
                 Generative Pretrained Transformers (GPT), e.g., ChatGPT, have recently changed the landscape of AI research with their size, scale, and performance. Researchers have discovered that with ample data and compute resources, this architecture performs very well and shows "emergent behavior," i.e., the ability to perform well or demonstrate knowledge on tasks it was not explicitly trained on. Netradyne is a fleet safety company that focuses on dash camera driving analytics, and they have vast amounts of driver data, providing a unique setting to leverage GPT-style models. The DriverGPT project aims to learn to predict future driver behaviors based on previous time steps. This could be used to predict short-term trajectories, such as potential collisions, or long-term behaviors, such as the overall trends of a driver's safety score and how it compares to other drivers. Nonetheless, extending GPT to driving data presented many challenges, such as how to tokenize continuous data or how to use GPT on time series data from devices with different frame rates and specifications. Many small-scale experiments were conducted to address these questions.
             <!-- 
                 <figure>
-                    <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%">
+                    <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%;max-width:480px;">
                     <figcaption>Transformer architectures for multi object tracking (ours is called Trackformer++)</figcaption>
                 </figure> -->
             </p>
@@ -262,10 +288,10 @@
                 This preliminary literature review sheds light on critical challenges and delineates prospective directions for future research in visual pretraining for robotic manipulation.
                 
                 <figure>
-                    <img src="Abhi Research Portfolio/2023/robot_graping_figs/affordance-img.png" alt="Affordance prediction used for predicting robot grasps" style="width:30%">
-                    <figcaption>This illustrates how visual pretraining can be used to teach affordance prediction models that guide a robot manipulator to the best picking position. This image is from <a /href="https://arxiv.org/pdf/2107.00646">"Learning to See before Learning to Act: Visual Pre-training for Manipulation
-""                    </a></figcaption>
-                </figure>
+                    <img src="Abhi Research Portfolio/2023/robot_graping_figs/affordance-img.png" alt="Affordance prediction used for predicting robot grasps" style="width:100%;max-width:960px;">
+                     <figcaption>This illustrates how visual pretraining can be used to teach affordance prediction models that guide a robot manipulator to the best picking position. This image is from <a /href="https://arxiv.org/pdf/2107.00646">"Learning to See before Learning to Act: Visual Pre-training for Manipulation
+ ""                    </a></figcaption>
+                 </figure>
             </p>
         </div>
         
@@ -290,8 +316,8 @@
                 The transformer neural network architecture allows for autoregressive sequence-to-sequence modeling through the use of attention layers. It was originally created with the application of machine translation but has revolutionized natural language processing. Recently, transformers have also been applied across a wide variety of pattern recognition tasks, particularly in computer vision. In this literature review, we describe major advances in computer vision utilizing transformers. We then focus specifically on Multi-Object Tracking (MOT) and discuss how transformers are increasingly becoming competitive in state-of-the-art MOT works, yet still lag behind traditional deep learning methods.
                 
                 <figure>
-                    <img src="Abhi Research Portfolio/2023/transformers_review_figs/Transformer.png" alt="Global Tracking Transformer Architecture" style="width:30%">
-                    <img src="Abhi Research Portfolio/2023/transformers_review_figs/TransTrack.png" alt="Global Tracking Transformer Architecture" style="width:30%">
+                    <img src="Abhi Research Portfolio/2023/transformers_review_figs/Transformer.png" alt="Global Tracking Transformer Architecture" style="width:30%;max-width:480px;">
+                    <img src="Abhi Research Portfolio/2023/transformers_review_figs/TransTrack.png" alt="Global Tracking Transformer Architecture" style="width:30%;max-width:480px;">
                     <figcaption>The left shows the original <a href="https://arxiv.org/abs/1706.03762"> Transformer </a> architectecture. The right shows an extension to the architurecture of object tracking, implemented as <a href="https://arxiv.org/abs/2012.15460">TransTrack</a> </figcaption>
                 </figure> 
             </p>
@@ -327,11 +353,11 @@
                 <br><br>
                 Work on this project is ongoing and experiments are being conducted. We refer to our model as <b>Trackformer++</b> as it builds off of Trackformer. A visual comparison is shown below.
                 <figure>
-                    <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%">
-                    <img src="files/netradyne/Trackformer.png" alt="Trackformer Architecture" style="width:30%">
-                    <img src="files/netradyne/Trackformer++.png" alt="Trackformer++ (Our) Architecture" style="width:25%">
-                    <figcaption>Transformer architectures for multi object tracking (ours is called Trackformer++)</figcaption>
-                </figure>
+                    <img src="files/netradyne/GTR.png" alt="Global Tracking Transformer Architecture" style="width:30%;max-width:480px;">
+                    <img src="files/netradyne/Trackformer.png" alt="Trackformer Architecture" style="width:30%;max-width:480px;">
+                    <img src="files/netradyne/Trackformer++.png" alt="Trackformer++ (Our) Architecture" style="width:25%;max-width:480px;">
+                     <figcaption>Transformer architectures for multi object tracking (ours is called Trackformer++)</figcaption>
+                 </figure>
             </p>
         </div>
 
@@ -355,9 +381,9 @@
         <div class="collapse_content"> 
             <p>
                 <figure>
-                    <img src="Abhi Research Portfolio/2021 - Senior Year/auto_farm30x30.gif" alt="Semantic segmentation of a building" style="width:20%">
-                    <img src="Abhi Research Portfolio/2021 - Senior Year/small_grid_errors.png" alt="Semantic segmentation of a building" style="width:30%">
-                    <img src="Abhi Research Portfolio/2021 - Senior Year/terrasentia.jpg" alt="Semantic segmentation of a building" style="width:30%">
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/auto_farm30x30.gif" alt="Semantic segmentation of a building" style="width:20%;max-width:480px;">
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/small_grid_errors.png" alt="Semantic segmentation of a building" style="width:30%;max-width:480px;">
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/terrasentia.jpg" alt="Semantic segmentation of a building" style="width:30%;max-width:480px;">
                     <figcaption>Example of the simulation running, user interface, and real robots they represent.</figcaption>
                 </figure>
 
@@ -401,19 +427,19 @@
                 Our implementation is open-sourced and can be accessed on the ScaleCUDA branch here: <a href="https://github.com/akamboj2/scalehls/tree/scalecuda">ScaleCUDA branch</a>. Our experimentation code is also provided here: <a href="https://github.com/akamboj2/CuBLAS_ScaleCUDATesting">Experimentation Code</a>.
                 <div style="display: flex; justify-content: space-between; gap: 10px;">
                     <figure style="flex: 1; text-align: center;">
-                        <img src="files/projects/course_projects/ece527/basic_block_scalecuda.png" alt="Basic Block Diagram of ScaleCUDA within MLIR" style="width:100%;">
+                        <img src="files/projects/course_projects/ece527/basic_block_scalecuda.png" alt="Basic Block Diagram of ScaleCUDA within MLIR" style="width:100%;max-width:960px;">
                         <figcaption>The black lines and boxes represent preexisting components in the MLIR framework. The blue arrows represent ScaleCUDA proposed contributions. Polygiest translates from C++ to the Affine dialect. ScaleHLS translates from HLS C++ to the HLS dialect and the Affine dialect. ScaleCUDA's current implementation lowers the Affine dialect to the NVVM GPU Dialect and future extensions may convert from HLS to NVVM. </figcaption>
                     </figure>
                     <figure style="flex: 1; text-align: center;">
-                        <img src="files/projects/course_projects/ece527/ScaleCUDA_pipeline.png" alt="block diagram" style="width:100%;">
+                        <img src="files/projects/course_projects/ece527/ScaleCUDA_pipeline.png" alt="block diagram" style="width:100%;max-width:960px;">
                         <figcaption>This block diagram shows the entire ScaleCUDA pipeline. ScaleCUDA lowers the Affine dialect to the GPU dialect leveraging existing ScaleHLS passes and custom passes.</figcaption>
                     </figure>
                     <figure style="flex: 1; text-align: center;">
-                        <img src="files/projects/course_projects/ece527/MatrixAdd_data.png" alt="ScaleCUDA Matrix Addition Performance" style="width:100%;">
+                        <img src="files/projects/course_projects/ece527/MatrixAdd_data.png" alt="ScaleCUDA Matrix Addition Performance" style="width:100%;max-width:960px;">
                         <figcaption>The box plot above shows a comparison of performance of ScaleCUDA and CuBLAS. ScaleCUDA performs marginally better, however, with a higher variance.</figcaption>
                     </figure>
                     <figure style="flex: 1; text-align: center;">
-                        <img src="files/projects/course_projects/ece527/MatrixMult_data.png" alt="ScaleCUDA Matrix Multiplication Performance" style="width:100%;">
+                        <img src="files/projects/course_projects/ece527/MatrixMult_data.png" alt="ScaleCUDA Matrix Multiplication Performance" style="width:100%;max-width:960px;">
                         <figcaption>ScaleCUDA Matrix Multiplication Performance: The box plot above shows a comparison of performance of ScaleCUDA, CuBLAS, and the CUDA MMA Op across 5 matrix multiplication trials for each method. ScaleCUDA shows a slightly higher performance in this simple metric.</figcaption>
                     </figure>
                 </div>
@@ -466,14 +492,14 @@
 
             <b>Diagrams:</b><br>
             <!-- unnecessary and blurry          <img src="files/nvidia/STR_prelim_profiling.PNG" alt="NVIDIA project" style="width:100%"> -->
-            <img src="files/nvidia/STR_2stage.PNG" alt="2 stage STR" style="width: 40%">
-            <img src="files/nvidia/STR_end_vs_2stage.PNG" alt="NVIDIA project" style="width:40%">
-            <img src="files/nvidia/STR_origEasyOCR.PNG" alt="NVIDIA project" style="width:40%">
-            <img src="files/nvidia/STR_modified_EasyOCR.PNG" alt="NVIDIA project" style="width:40%">
-            <img src="files/nvidia/STR_benchmarking.PNG" alt="NVIDIA project" style="width:40%">
-            <img src="files/nvidia/STR_example1.PNG" alt="NVIDIA project" style="width:40%">
-            <img src="files/nvidia/STR_exampl2_airport.PNG" alt="NVIDIA project" style="width:40%">
-            <img src="files/nvidia/STR_example3_UPS.PNG" alt="NVIDIA project" style="width:40%">
+            <img src="files/nvidia/STR_2stage.PNG" alt="2 stage STR" style="width:40%;max-width:480px;">
+            <img src="files/nvidia/STR_end_vs_2stage.PNG" alt="NVIDIA project" style="width:40%;max-width:480px;">
+            <img src="files/nvidia/STR_origEasyOCR.PNG" alt="NVIDIA project" style="width:40%;max-width:480px;">
+            <img src="files/nvidia/STR_modified_EasyOCR.PNG" alt="NVIDIA project" style="width:40%;max-width:480px;">
+            <img src="files/nvidia/STR_benchmarking.PNG" alt="NVIDIA project" style="width:40%;max-width:480px;">
+            <img src="files/nvidia/STR_example1.PNG" alt="NVIDIA project" style="width:40%;max-width:480px;">
+            <img src="files/nvidia/STR_exampl2_airport.PNG" alt="NVIDIA project" style="width:40%;max-width:480px;">
+            <img src="files/nvidia/STR_example3_UPS.PNG" alt="NVIDIA project" style="width:40%;max-width:480px;">
         </div>
 
         <!--  ECE 598 Project Learning Based Robotics -->
@@ -510,11 +536,11 @@
                  
                 <div style="display: flex; justify-content: space-between; gap: 10px;">
                     <figure style="flex: 1; text-align: center;">
-                        <img src="files/projects/course_projects/ece598/ll.png" alt="RL sample" style="width:50%;">
+                        <img src="files/projects/course_projects/ece598/ll.png" alt="RL sample" style="width:50%;max-width:480px;">
                         <figcaption>The Lunar Lander environment</figcaption>
                     </figure>
                     <figure style="flex: 1; text-align: center;">
-                        <img src="files/projects/course_projects/ece598/rewards.png" alt="results-rewards" style="width:60%;">
+                        <img src="files/projects/course_projects/ece598/rewards.png" alt="results-rewards" style="width:60%;max-width:480px;">
                         <figcaption>The rewards accrued by each model</figcaption>
                     </figure>
                 </div>
@@ -542,7 +568,7 @@
                 As robots become more prevalent, designing an efficient communication system for human-robot interaction becomes an important yet challenging problem. Visual and tactile interfaces are very common in autonomous robots and intelligent systems; however, audio-based interfaces are a relatively new and developing area. We study the scenario in which a fleet of agricultural robots need to communicate a failure case for a human operator to diagnose and respond to in a teleoperation setting. These robots must have a simple yet effective communication system so farmers that may not have robotic experience can operate them. In this thesis project, we develop an agbot simulation platform and various audio communication techniques and characterize the most effective and natural interface. First, autonomous farms of varying complexity are created using the OpenAI Gridworld simulation. Then, a user study with 11 participants is conducted with this simulation to test three audio communication methods: sounds, single-word commands, and full natural language communication. As the robots on the farm experience and report errors, the human is tasked with diagnosing them and keeping the robots going. Afterwards, the user completes a survey to determine the overall effectiveness of the system. The results suggest that the human’s perception of the system is mainly impacted by the audio communication technique not the complexity, and the single word commands provide the best interface. However, not all the results were statistically significant, potentially because of the small sample size, and further studies should be conducted on this topic to confirm the results.
                  
                 <!-- <figure>
-                    <img src="Abhi Research Portfolio/2021 - Senior Year/" alt="Global Tracking Transformer Architecture" style="width:30%">
+                    <img src="Abhi Research Portfolio/2021 - Senior Year/" alt="Global Tracking Transformer Architecture" style="width:30%;max-width:480px;">
                     <figcaption>Sample caption goes here</figcaption>
                 </figure> -->
             </p>
@@ -571,7 +597,7 @@
                 
                 For quantitative results, we evaluate the safety and quality of the system using two metrics: average distance travelled and total time taken. We ran three separate trials in the simulator (with different starting coordinates) and measured these metrics to analyze the performance and efficiency of our pipeline. We also compare the path taken by a PD controller using hardcoded way-points for the simulated track and the path taken by our system to observe a mismatch in performance. Experiments run show that our system fails primarily on straight roads whenever the lanes are failed to be detected. Our image filtering method must be further tuned to better detect lanes.
                 <figure>
-                    <img src="files/projects/course_projects/ece484/image_filtering.png" alt="Block Diagram of lane following steps" style="width:30%">
+                    <img src="files/projects/course_projects/ece484/image_filtering.png" alt="Block Diagram of lane following steps" style="width:30%;max-width:480px">
                     <figcaption>Steps used in image filtering unit.</figcaption>
                 </figure>
             </p>
@@ -596,7 +622,7 @@
         </button>
         <div class="collapse_content"> 
             <figure>
-                <img src="Abhi Research Portfolio/2020 - Junior Year/sample_segmentation.png" alt="Semantic segmentation of a building" style="width:20%">
+                <img src="Abhi Research Portfolio/2020 - Junior Year/sample_segmentation.png" alt="Semantic segmentation of a building" style="width:20%;max-width:480px;">
                 <figcaption>Semantic segmentation labeling windows, images and building facade for the building classification task, using a self made lableing tool.</figcaption>
             </figure>
             <p>
@@ -643,7 +669,7 @@
                 <b>Description:</b> <br>
                 This research was conducted in the PURE program at the University of Illinois at Urbana-Champaign, and presented at the undergraduate research symposium. More information on the motivation of the project can be found <a href="Abhi Research Portfolio/2019 - Sophmore Year/MPPTs Background Research.pptx">Background Research</a>, <a href="Abhi Research Portfolio/2019 - Sophmore Year/Pure Midsemester--Abhi_s Research.pptx">Midsemester Presentation</a>.
                 <figure>
-                    <img src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi's PURE 2018 MPPT Poster_revised.png" alt="Solar MPPT Characge Controller Poster" style="width:100%">
+                    <img src="Abhi Research Portfolio/2019 - Sophmore Year/Abhi's PURE 2018 MPPT Poster_revised.png" alt="Solar MPPT Characge Controller Poster" style="width:100%;max-width:480px;">
                     <figcaption>Reserach poster presented at the UIUC PURE undergraduate reserach symposium in Fall 2018.</figcaption>
                 </figure>
             </p>
@@ -673,17 +699,49 @@
 
                 <figure>
                     <h4>VREP Obstacle Avoidance</h4>
-                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/navigation.png" alt="" style="width:50%">
-                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/obj_avoid.png" alt="" style="width:50%">
+                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/navigation.png" alt="" style="width:100%;max-width:960px;">
+                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/obj_avoid.png" alt="" style="width:100%;max-width:960px;">
                     <h4> Using iRobot with Lidar</h4>
-                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/irobot.png" alt="" style="width:20%">
+                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/irobot.png" alt="" style="width:100%;max-width:480px;">
                     <h4> Using gmapping in hallways</h4>
-                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/ros-gmapping.png" alt="" style="width:40%">
+                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/ros-gmapping.png" alt="" style="width:100%;max-width:960px;">
                     <h4> A* Path Planning</h4>
-                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/path_plan.png" alt="" style="width:20%">
+                    <img src="Abhi Research Portfolio/2018 - Freshman Year Summer/path_plan.png" alt="" style="width:100%;max-width:960px;">
 
                     <figcaption>Snippets of project, see website for full details</figcaption>
                 </figure>
+            </p>
+        </div>
+
+        <!-- VR Haptic Feedback -->
+        <button class="collapsible">
+            <img src="Abhi Research Portfolio/2017 - 12th Grade/hardware_photo.png" alt="Project Image" class="collapsible-image">
+            <div class="collapsible-content">
+                <div class="project-title">An Immersive Virtual Reality: The Effect of Haptics on Agency in a Virtual Environment</div>
+                <div class="project-authors">Abhi Kamboj</div>
+                <div class="project-venue">Arxiv 2024</div>
+                <div class="project-links">
+                    <a href="Abhi Research Portfolio/2017 - 12th Grade/Science Fair/VR Research Paper_Abhi Kamboj_2016-17.pdf">Paper</a> | 
+                    <a href="Abhi Research Portfolio/2017 - 12th Grade/Science Fair/Abhi_TCRSF_poster Final.pdf">Poster</a> <!-- | 
+                    <a href="link-to-website">Website</a> -->
+                </div>
+            </div>
+        </button>
+        <div class="collapse_content"> 
+            <p>
+                <b>Abstract:</b> <br> 
+                With an increasing number of virtual reality applications, more research must be conducted regarding human interaction with virtual environments. Various studies have researched agency over a virtual avatar and others have researched haptics in virtual reality (VR). This experiment combines these two sects of VR studies to determine if haptics in a virtual environment alters the perception of agency a user feels over their virtual hands. Unreal Engine 4 and an Oculus Rift with an attached Leap Motion sensor were used to create an immersive virtual environment with hand tracking capability. Human subjects were individually tested in 2 tasks. First, they were to touch and lift a block with their virtual hands, then they did the same with an identical block in front of them so they would be interacting with a real and virtual block simultaneously. A questionnaire was given afterwards to measure the user’s agency over the virtual hands during each task. The results show that haptic feedback decreases one’s agency over virtual hands. This suggests that the proprioceptive response related to feeling an object with a person’s actual hands decreases the effectiveness of the illusion that the hands on the screen actually belong to the user, meaning a more immersive virtual environment could be created with less haptic feedback. More research should be conducted verifying the impact tangible virtual objects have on a user’s virtual experience, but overall this research could have far-reaching implications. Instead of augmenting virtual environments with real ones, an environment with less interaction with reality could allow for better VR applications.
+                 
+                <div style="display: flex; gap: 1rem; justify-content: center; align-items: flex-start;">
+                    <figure style="flex: 1; text-align: center;">
+                        <img src="Abhi Research Portfolio/2017 - 12th Grade/absent_haptic_fb.png" alt="Absent Haptic Feedback" style="width:40%;max-width:480px;">
+                        <figcaption>The user was tasked with manipulating a box in a VR environment using their hands. There was no real box in their hands.</figcaption>
+                    </figure>
+                    <figure style="flex: 1; text-align: center;">
+                        <img src="Abhi Research Portfolio/2017 - 12th Grade/with_haptic_fb.png" alt="With Haptic Feedback" style="width:40%;max-width:480px;">
+                        <figcaption>The user was tasked with manipulating a box in a VR environment using their hands. There was a real box of the same dimension in their hands.</figcaption>
+                    </figure>
+                </div>
             </p>
         </div>
        
@@ -713,3 +771,4 @@
         }
         </script>
 </html>
+
